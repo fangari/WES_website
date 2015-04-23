@@ -7,8 +7,8 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+Base styles: opinionated defaults
+========================================================================== */
 
 html,
 button,
@@ -79,8 +79,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
+Chrome Frame prompt
+========================================================================== */
 
 .chromeframe {
     margin: 0.2em 0;
@@ -90,15 +90,71 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
 
-
-
-
-
-
+/* ul { float: right; } */
+/* li { */ 
+/*     display: inline; */  
+/*     float: left; */
+/* } */
+/* nav { */
+/*     width: 100%; */
+/*     margin: 0 auto; */
+/* } */
+/* section.stretch { */
+/*     float: left; */
+/*     height: 1500px; */
+/*     width: 100%; */
+/* } */
+/* section.stretch p { */
+/*     font-family: sans-serif; */
+/*     font-size: 30px; */
+/*     color: #969696; */
+/*     text-align: center; */
+/*     position: relative; */
+/*     margin-top: 250px; */
+/* } */
+/* section.strectch p.bottom { top: 100%; } */
+/* header { */
+/*     background: #c7c7c7; */
+/*     border-bottom: 1px solid #aaa; */
+/*     float: left; */
+/*     width: 100%; */
+/*     position: fixed; */
+/*     z-index: 10; */
+/*  } */
+/* header a { */
+/*     color: #969696; */
+/*     text-decoration: none; */
+/*     font-family: sans-serif; */
+/*     text-transform: uppercase; */
+/*     font-size: 1em; */
+/* } */
+/* header a.active, header a:hover{ */
+/*     color: #3d3d3d; */
+/* } */
+/* header li{ margin-right: 30px; } */
+/* header.large { height: 120px; } */
+/* header.large img{ */
+/*     width: 489px; */
+/*     height: 113px; */
+/* } */
+/* header.large li { margin-top: 45px; } */
+/* header.small { height: 50px; } */
+/* header.small img { */
+/*     width: 287px; */
+/*     height: 69px; */
+/*     margin-top: -10px; */
+/* } */
+/* header.small li { margin-top: 17px; } */
+/* header, nav, a, img, li{ */
+/*     transition: all 1s; */
+/*     -moz-transition: all 1s; */
+/*     -webkit-transition: all 1s; */
+/*     -o-transition: all 1s; */
+/* } */
 
 
 
@@ -110,8 +166,8 @@ textarea {
 
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+Helper classes
+========================================================================== */
 
 /*
  * Image replacement
@@ -122,19 +178,19 @@ textarea {
     border: 0;
     overflow: hidden;
     /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
+              *text-indent: -9999px;
+          }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-}
+          .ir:before {
+              content: "";
+              display: block;
+              width: 0;
+              height: 100%;
+          }
 
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
+          /*
+           * Hide from both screenreaders and browsers: h5bp.com/u
+           */
 
 .hidden {
     display: none !important;
@@ -211,24 +267,85 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+EXAMPLE Media Queries for Responsive Design.
+Theses examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 960px) {
     /* Style adjustments for viewports that meet the condition */
+    ul { float: right; }
+    li { 
+        display: inline;  
+        float: left;
+    }
+    nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+    section.stretch {
+        float: left;
+        height: 1500px;
+        width: 100%;
+    }
+    section.stretch p {
+        font-family: sans-serif;
+        font-size: 30px;
+        color: #969696;
+        text-align: center;
+        position: relative;
+        margin-top: 250px;
+    }
+    section.strectch p.bottom { top: 100%; }
+    header {
+        background: #c7c7c7;
+        border-bottom: 1px solid #aaa;
+        float: left;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
+    header a {
+        color: #969696;
+        text-decoration: none;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+    header a.active, header a:hover{
+        color: #3d3d3d;
+    }
+    header li{ margin-right: 30px; }
+    header.large { height: 120px; }
+    header.large img{
+        width: 489px;
+        height: 113px;
+    }
+    header.large li { margin-top: 45px; }
+    header.small { height: 50px; }
+    header.small img {
+        width: 287px;
+        height: 69px;
+        margin-top: -10px;
+    }
+    header.small li { margin-top: 17px; }
+    header, nav, a, img, li{
+        transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
+only screen and (min-resolution: 144dpi) {
     /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+Print styles.
+Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
 
 @media print {
     * {
@@ -255,44 +372,44 @@ textarea {
      * Don't show links for images, or javascript/internal links
      */
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
+.ir a:after,
+a[href^="javascript:"]:after,
+a[href^="#"]:after {
+    content: "";
+}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+pre,
+blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
+thead {
+    display: table-header-group; /* h5bp.com/t */
+}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+tr,
+img {
+    page-break-inside: avoid;
+}
 
-    img {
-        max-width: 100% !important;
-    }
+img {
+    max-width: 100% !important;
+}
 
-    @page {
-        margin: 0.5cm;
-    }
+@page {
+    margin: 0.5cm;
+}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+p,
+h2,
+h3 {
+    orphans: 3;
+    widows: 3;
+}
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+h2,
+h3 {
+    page-break-after: avoid;
+}
 }
