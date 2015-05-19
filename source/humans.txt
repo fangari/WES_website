@@ -3,7 +3,10 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    UI Developer: Fernando Angarita
+    Contact: fangari [at] gmail.com
+    Twitter: @ferAngarita
+    From: Bogotá, Colombia
 
 # THANKS
 
@@ -12,4 +15,12 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    jQuery, Modernizr, Normalize
+    VIM, Inkscape, Gimp, Sketch, Cyberduck
+
+# SITE
+
+    Last update: May 19, 2015
+    Language: English, Spanish
+    Doctype: HTML5
+
