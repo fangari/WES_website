@@ -1,0 +1,54 @@
+es:
+  title: "1er Simposio Internacional de Esmeraldas"
+  paths:
+    home: ""
+    symposium: "simposio"
+    schedule: "agenda"
+    registration: "registro"
+    citizen-registration: "registro-ciudadanos"
+    non-citizen-registration: "registro-no-ciudadanos"
+    recommended-hotels: "hoteles-recomendados"
+    recommended-plans: "planes-recomendados"
+    contact: "contacto"
+    queries: "consultas"
+
+  # Header
+  home: "Inicio"
+  symposium: "Simposio"
+  registration: "Registro"
+  schedule: "Agenda"
+  recommended: "Recomendados"
+  contact: "Contacto"
+
+  tagline: "Ven y construye junto a grandes expertos, soluciones para el futuro del negocio de las esmeraldas"
+
+  # Simposio
+  queries: "Consultas"
+
+  # Agenda
+  tracks: "Ejes Temáticos"
+  speakers: "Cronograma y Conferencistas"
+  keynote_slot: "D&iacute;a y hora de la presentaci&oacute;n"
+
+  # Registro
+  registration_warning: "*Antes de realizar su registro lo invitamos a conocer las recomendaciones
+     de hoteles y planes en la pesta&ntilde;a de &ldquo;RECOMENDADOS&rdquo;"
+  citizen-form-title: "Formulario de inscripci&oacute;n para ciudadanos Colombianos"
+  non-citizen-form-title: "Formulario de inscripci&oacute;n para ciudadanos de otro pa&iacute;s"
+  register: "Registrarse"
+  download_form: "Descargar Formulario"
+
+  # Hotels
+  hotels_title: "HOTELES"
+  plans_title: "PLANES"
+  hotel_warning: "Esta recomendaci&oacute;n de hoteles se realiz&oacute; con base en la
+    cercan&iacute;a con el lugar del evento (Hotel Sheraton Bogotá)"
+  more_options: "Si desea ver m&aacute;s opciones de hoteles le recomendamos buscar por la Calle 26"
+  hosting: "Lugar del simposio"
+
+  # Contact
+  sponsored: "Organiza"
+
+  # Footer
+  super_first: "er"
+  copyright: "Simposio Internacional de Esmeraldas"

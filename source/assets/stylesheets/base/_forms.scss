@@ -29,6 +29,7 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple],
 textarea {
+  color: $dark-gray;
   background-color: $base-background-color;
   border: $base-border;
   border-radius: $base-border-radius;
@@ -75,4 +76,5 @@ select {
   margin-bottom: $base-spacing;
   max-width: 100%;
   width: auto;
+  color: $dark-gray;
 }

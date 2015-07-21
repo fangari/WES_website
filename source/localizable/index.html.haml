@@ -5,8 +5,8 @@ lang: es
 ---
 .landing-container
   %section.logos-container
-    = image_tag "blk_logo_en.png"
-    = image_tag "be_change_logo_en.png"
+    = image_tag "blk_logo_#{I18n.locale.to_s}.png"
+    = image_tag "be_change_logo_#{I18n.locale.to_s}.png"
   %section.tagline
     %h1
       = t(:tagline)

@@ -20,10 +20,22 @@ $blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$base-background: hsla(0,0,50,1);
+$white: #fff;
+$base-bubble: hsl(63, 61, 48);
+$base-translucid: hsla(63, 61, 48, 0.3);
+$base-trans-triangle: hsl(63, 26, 34);
+$active-bubble: hsl(173, 100, 31);
+$active-translucid: hsla(173, 100, 31, 0.2);
+$active-trans-triangle: hsl(173, 21, 31);
+$highlight: hsl(174, 52,22);
+$flag-yellow: hsl(60, 100, 40);
+$flag-blue: hsl(240, 100, 40);
+$flag-red: hsl(0, 100, 40);
 
 // Font Colors
 $base-background-color: #fff;
-$base-font-color: $dark-gray;
+$base-font-color: $white;
 $action-color: $blue;
 
 // Border

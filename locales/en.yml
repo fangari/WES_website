@@ -1,0 +1,56 @@
+en:
+  title: "1st International Emerald Symposium"
+  paths:
+    home: ""
+    symposium: "symposium"
+    schedule: "schedule"
+    registration: "registration"
+    citizen-regirstration: "citizen-registration"
+    non-citizen-registration: "non-citizen-registration"
+    recommended-hotels: "recommended-hotels"
+    recommended-plans: "recommended-plans"
+    contact: "contact"
+    queries: "queries"
+
+  # Header
+  home: "Home"
+  symposium: "Symposium"
+  registration: "Registration"
+  schedule: "Program"
+  recommended: "Recommended"
+  contact: "Contact"
+
+  tagline: "Come and build alongside leading experts, solutions for the future of the
+    emerald business"
+
+  # Simposio
+  queries: "Queries"
+
+  # Agenda
+  tracks: "Conference Tracks"
+  speakers: "Keynotes and Sessions"
+  keynote_slot: "Keynote date and time"
+
+  # Registro
+  registration_warning: "* Before registering, we invite you to check the recommended
+     hotels and plans on the &ldquo;RECOMMENDED&rdquo; tab"
+  citizen-form-title: "Registration for Colombian citizens"
+  non-citizen-form-title: "Registration for non-citizens"
+  register: "Register"
+  download_form: "Download Form"
+
+  # Hotels
+  hotels_title: "HOTELS"
+  plans_title: "TOURS"
+  hotel_warning: "These recommended hotels are the closest to the symposium venue.
+    (Sheraton Hotel Bogot&aacute;)"
+  more_options: "If you wish to look into other options we recommend that you look for hotels
+    along Calle 26"
+  hosting: "Symposium venue"
+
+  # Contact
+  sponsored: "Sponsored by"
+
+  # Footer
+  super_first: "st"
+  copyright: "International Emerald Symposium"

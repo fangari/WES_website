@@ -1,0 +1,619 @@
+---
+title: "1st International Emerald Symposium"
+layout: layout
+---
+%main.form.container
+  %aside
+    %h1{hidden: true} Registration for citizens of other countries
+    = image_tag "titulo_formulario.png", class: "title"
+    = image_tag "pinza_esmeralda.png"
+  %article
+    .indicates-required
+      %span.asterisk*
+      indicates a required field
+    %form.grid{method: "post",
+    action: "//worldemeraldsymposium.us10.list-manage.com/subscribe/post?u=c1a7d035395ac1cb5dbdc16e4&id=feee43f9e7",
+    name: "mc-embedded-subscribe-form", novalidate: true}
+      %section.right-separator
+        %label{for: "nombre"}Name
+        .grid
+          %select.grid-1of4{name: "TITULO"}
+            %option{value: "Mr."}Mr.
+            %option{value: "Mrs."}Mrs.
+          %input.grid-3of4{type: "text", name: "FNAME", placeholder: "First name *", required: true}
+        %input{type: "text", name: "LNAME", placeholder: "Last name *", required: true}
+        %label{for: "empresa"}Company name
+        %input{type: "text", name: "EMPRESA", placeholder: "Company"}
+        %label{for: "campoDeTrabajo"}Nature of Business *
+        .grid
+          .grid-1of2
+            %ul
+              %li
+                %input{id: "mce-group[19717]-19717-0", name: "group[19717][1]", type: "checkbox", value: "1"}/
+                Sales
+              %li 
+                %input{id: "mce-group[19717]-19717-1", name: "group[19717][2]", type: "checkbox", value: "2"}/
+                Mining
+              %li
+                %input{id: "mce-group[19717]-19717-2", name: "group[19717][4]", type: "checkbox", value: "4"}/
+                Exhibition
+              %li
+                %input{id: "mce-group[19717]-19717-3", name: "group[19717][8]", type: "checkbox", value: "8"}/
+                Cutting
+          .grid-1of2
+            %ul
+              %li
+                %input{id: "mce-group[19717]-19717-4", name: "group[19717][16]", type: "checkbox", value: "16"}/
+                Other
+              %li
+                %input{type: "text", name: "OTROCAMPO", placeholder: "Please specify"}
+        %div
+          %label{for: "DIRECCION"}Address
+          %input{type: "text", name: "DIRECCION[addr1]", placeholder: "Address Line 1 *", required: true}
+          %input{type: "text", name: "DIRECCION[addr2]", placeholder: "Address Line 2 *"}
+          %input.half-right{type: "text", name: "DIRECCION[city]", placeholder: "City *", required: true}
+          %input.half-left{type: "text", name: "DIRECCION[state]", placeholder: "City/Province/Region *", required: true}
+          %input.half-right{type: "text", name: "DIRECCION[zip]", placeholder: "Postal / Zip Code *", required: true}
+          .half-left
+            %select{name: "DIRECCION[country]", required: true}
+              %option{:selected => "selected", :value => "164"} USA
+              %option{:value => "286"} Aaland Islands
+              %option{:value => "274"} Afghanistan
+              %option{:value => "2"} Albania
+              %option{:value => "3"} Algeria
+              %option{:value => "178"} American Samoa
+              %option{:value => "4"} Andorra
+              %option{:value => "5"} Angola
+              %option{:value => "176"} Anguilla
+              %option{:value => "175"} Antigua And Barbuda
+              %option{:value => "6"} Argentina
+              %option{:value => "7"} Armenia
+              %option{:value => "179"} Aruba
+              %option{:value => "8"} Australia
+              %option{:value => "9"} Austria
+              %option{:value => "10"} Azerbaijan
+              %option{:value => "11"} Bahamas
+              %option{:value => "12"} Bahrain
+              %option{:value => "13"} Bangladesh
+              %option{:value => "14"} Barbados
+              %option{:value => "15"} Belarus
+              %option{:value => "16"} Belgium
+              %option{:value => "17"} Belize
+              %option{:value => "18"} Benin
+              %option{:value => "19"} Bermuda
+              %option{:value => "20"} Bhutan
+              %option{:value => "21"} Bolivia
+              %option{:value => "22"} Bosnia and Herzegovina
+              %option{:value => "23"} Botswana
+              %option{:value => "181"} Bouvet Island
+              %option{:value => "24"} Brazil
+              %option{:value => "180"} Brunei Darussalam
+              %option{:value => "25"} Bulgaria
+              %option{:value => "26"} Burkina Faso
+              %option{:value => "27"} Burundi
+              %option{:value => "28"} Cambodia
+              %option{:value => "29"} Cameroon
+              %option{:value => "30"} Canada
+              %option{:value => "31"} Cape Verde
+              %option{:value => "32"} Cayman Islands
+              %option{:value => "33"} Central African Republic
+              %option{:value => "34"} Chad
+              %option{:value => "35"} Chile
+              %option{:value => "36"} China
+              %option{:value => "185"} Christmas Island
+              %option{:value => "37"} Colombia
+              %option{:value => "204"} Comoros
+              %option{:value => "38"} Congo
+              %option{:value => "183"} Cook Islands
+              %option{:value => "268"} Costa Rica
+              %option{:value => "275"} Cote D'Ivoire
+              %option{:value => "40"} Croatia
+              %option{:value => "276"} Cuba
+              %option{:value => "298"} Curacao
+              %option{:value => "41"} Cyprus
+              %option{:value => "42"} Czech Republic
+              %option{:value => "318"} Democratic Republic of the Congo
+              %option{:value => "43"} Denmark
+              %option{:value => "44"} Djibouti
+              %option{:value => "186"} Dominica
+              %option{:value => "289"} Dominica
+              %option{:value => "187"} Dominican Republic
+              %option{:value => "45"} Ecuador
+              %option{:value => "46"} Egypt
+              %option{:value => "47"} El Salvador
+              %option{:value => "48"} Equatorial Guinea
+              %option{:value => "49"} Eritrea
+              %option{:value => "50"} Estonia
+              %option{:value => "51"} Ethiopia
+              %option{:value => "189"} Falkland Islands
+              %option{:value => "191"} Faroe Islands
+              %option{:value => "52"} Fiji
+              %option{:value => "53"} Finland
+              %option{:value => "54"} France
+              %option{:value => "193"} French Guiana
+              %option{:value => "277"} French Polynesia
+              %option{:value => "56"} Gabon
+              %option{:value => "57"} Gambia
+              %option{:value => "58"} Georgia
+              %option{:value => "59"} Germany
+              %option{:value => "60"} Ghana
+              %option{:value => "194"} Gibraltar
+              %option{:value => "61"} Greece
+              %option{:value => "195"} Greenland
+              %option{:value => "192"} Grenada
+              %option{:value => "196"} Guadeloupe
+              %option{:value => "62"} Guam
+              %option{:value => "198"} Guatemala
+              %option{:value => "270"} Guernsey
+              %option{:value => "63"} Guinea
+              %option{:value => "65"} Guyana
+              %option{:value => "200"} Haiti
+              %option{:value => "66"} Honduras
+              %option{:value => "67"} Hong Kong
+              %option{:value => "68"} Hungary
+              %option{:value => "69"} Iceland
+              %option{:value => "70"} India
+              %option{:value => "71"} Indonesia
+              %option{:value => "278"} Iran
+              %option{:value => "279"} Iraq
+              %option{:value => "74"} Ireland
+              %option{:value => "322"} Isle of Man
+              %option{:value => "75"} Israel
+              %option{:value => "76"} Italy
+              %option{:value => "202"} Jamaica
+              %option{:value => "78"} Japan
+              %option{:value => "288"} Jersey  (Channel Islands)
+              %option{:value => "79"} Jordan
+              %option{:value => "80"} Kazakhstan
+              %option{:value => "81"} Kenya
+              %option{:value => "203"} Kiribati
+              %option{:value => "82"} Kuwait
+              %option{:value => "83"} Kyrgyzstan
+              %option{:value => "84"} Lao People's Democratic Republic
+              %option{:value => "85"} Latvia
+              %option{:value => "86"} Lebanon
+              %option{:value => "87"} Lesotho
+              %option{:value => "88"} Liberia
+              %option{:value => "281"} Libya
+              %option{:value => "90"} Liechtenstein
+              %option{:value => "91"} Lithuania
+              %option{:value => "92"} Luxembourg
+              %option{:value => "208"} Macau
+              %option{:value => "93"} Macedonia
+              %option{:value => "94"} Madagascar
+              %option{:value => "95"} Malawi
+              %option{:value => "96"} Malaysia
+              %option{:value => "97"} Maldives
+              %option{:value => "98"} Mali
+              %option{:value => "99"} Malta
+              %option{:value => "207"} Marshall Islands
+              %option{:value => "210"} Martinique
+              %option{:value => "100"} Mauritania
+              %option{:value => "212"} Mauritius
+              %option{:value => "241"} Mayotte
+              %option{:value => "101"} Mexico
+              %option{:value => "102"} Moldova, Republic of
+              %option{:value => "103"} Monaco
+              %option{:value => "104"} Mongolia
+              %option{:value => "290"} Montenegro
+              %option{:value => "294"} Montserrat
+              %option{:value => "105"} Morocco
+              %option{:value => "106"} Mozambique
+              %option{:value => "242"} Myanmar
+              %option{:value => "107"} Namibia
+              %option{:value => "108"} Nepal
+              %option{:value => "109"} Netherlands
+              %option{:value => "110"} Netherlands Antilles
+              %option{:value => "213"} New Caledonia
+              %option{:value => "111"} New Zealand
+              %option{:value => "112"} Nicaragua
+              %option{:value => "113"} Niger
+              %option{:value => "114"} Nigeria
+              %option{:value => "217"} Niue
+              %option{:value => "214"} Norfolk Island
+              %option{:value => "272"} North Korea
+              %option{:value => "116"} Norway
+              %option{:value => "117"} Oman
+              %option{:value => "118"} Pakistan
+              %option{:value => "222"} Palau
+              %option{:value => "282"} Palestine
+              %option{:value => "119"} Panama
+              %option{:value => "219"} Papua New Guinea
+              %option{:value => "120"} Paraguay
+              %option{:value => "121"} Peru
+              %option{:value => "122"} Philippines
+              %option{:value => "221"} Pitcairn
+              %option{:value => "123"} Poland
+              %option{:value => "124"} Portugal
+              %option{:value => "253"} Puerto Rico
+              %option{:value => "126"} Qatar
+              %option{:value => "315"} Republic of Kosovo
+              %option{:value => "127"} Reunion
+              %option{:value => "128"} Romania
+              %option{:value => "129"} Russia
+              %option{:value => "130"} Rwanda
+              %option{:value => "205"} Saint Kitts and Nevis
+              %option{:value => "206"} Saint Lucia
+              %option{:value => "237"} Saint Vincent and the Grenadines
+              %option{:value => "132"} Samoa (Independent)
+              %option{:value => "227"} San Marino
+              %option{:value => "255"} Sao Tome and Principe
+              %option{:value => "133"} Saudi Arabia
+              %option{:value => "134"} Senegal
+              %option{:value => "266"} Serbia
+              %option{:value => "135"} Seychelles
+              %option{:value => "136"} Sierra Leone
+              %option{:value => "137"} Singapore
+              %option{:value => "302"} Sint Maarten
+              %option{:value => "138"} Slovakia
+              %option{:value => "139"} Slovenia
+              %option{:value => "223"} Solomon Islands
+              %option{:value => "140"} Somalia
+              %option{:value => "141"} South Africa
+              %option{:value => "257"} South Georgia and the South Sandwich Islands
+              %option{:value => "142"} South Korea
+              %option{:value => "311"} South Sudan
+              %option{:value => "143"} Spain
+              %option{:value => "144"} Sri Lanka
+              %option{:value => "293"} Sudan
+              %option{:value => "146"} Suriname
+              %option{:value => "225"} Svalbard and Jan Mayen Islands
+              %option{:value => "147"} Swaziland
+              %option{:value => "148"} Sweden
+              %option{:value => "149"} Switzerland
+              %option{:value => "285"} Syria
+              %option{:value => "152"} Taiwan
+              %option{:value => "260"} Tajikistan
+              %option{:value => "153"} Tanzania
+              %option{:value => "154"} Thailand
+              %option{:value => "233"} Timor-Leste
+              %option{:value => "155"} Togo
+              %option{:value => "232"} Tonga
+              %option{:value => "234"} Trinidad and Tobago
+              %option{:value => "156"} Tunisia
+              %option{:value => "157"} Turkey
+              %option{:value => "287"} Turks & Caicos Islands
+              %option{:value => "159"} Uganda
+              %option{:value => "161"} Ukraine
+              %option{:value => "162"} United Arab Emirates
+              %option{:value => "262"} United Kingdom
+              %option{:value => "163"} Uruguay
+              %option{:value => "165"} Uzbekistan
+              %option{:value => "239"} Vanuatu
+              %option{:value => "166"} Vatican City State (Holy See)
+              %option{:value => "167"} Venezuela
+              %option{:value => "168"} Vietnam
+              %option{:value => "169"} Virgin Islands (British)
+              %option{:value => "238"} Virgin Islands (U.S.)
+              %option{:value => "188"} Western Sahara
+              %option{:value => "170"} Yemen
+              %option{:value => "173"} Zambia
+              %option{:value => "174"} Zimbabwe
+        %div
+          .half-right
+            %label{for: "TELEFONO1"}Phone number 1 *
+            %input{type: "tel", name: "TELEFONO1", required: true}
+          .half-left
+            %label{for: "TELEFONO2"}Phone number 2
+            %input{type: "tel", name: "TELEFONO2"}
+        %div
+          %label{for: "EMAIL"}Email *
+          %input{type: "email", name: "EMAIL", required: true}
+      %section
+        %div
+          %label{for: "NACIONALID"}Nacionality *
+          %select{name: "NACIONALID", required: true}
+            %option{:value => "United States of America", selected: true} United States of America
+            %option{:value => "Aaland Islands"} Aaland Islands
+            %option{:value => "Afghanistan"} Afghanistan
+            %option{:value => "Albania"} Albania
+            %option{:value => "Algeria"} Algeria
+            %option{:value => "American Samoa"} American Samoa
+            %option{:value => "Andorra"} Andorra
+            %option{:value => "Angola"} Angola
+            %option{:value => "Anguilla"} Anguilla
+            %option{:value => "Antarctica"} Antarctica
+            %option{:value => "Antigua And Barbuda"} Antigua And Barbuda
+            %option{:value => "Argentina"} Argentina
+            %option{:value => "Armenia"} Armenia
+            %option{:value => "Aruba"} Aruba
+            %option{:value => "Australia"} Australia
+            %option{:value => "Austria"} Austria
+            %option{:value => "Azerbaijan"} Azerbaijan
+            %option{:value => "Bahamas"} Bahamas
+            %option{:value => "Bahrain"} Bahrain
+            %option{:value => "Bangladesh"} Bangladesh
+            %option{:value => "Barbados"} Barbados
+            %option{:value => "Belarus"} Belarus
+            %option{:value => "Belgium"} Belgium
+            %option{:value => "Belize"} Belize
+            %option{:value => "Benin"} Benin
+            %option{:value => "Bermuda"} Bermuda
+            %option{:value => "Bhutan"} Bhutan
+            %option{:value => "Bolivia"} Bolivia
+            %option{:value => "Bosnia and Herzegovina"} Bosnia and Herzegovina
+            %option{:value => "Botswana"} Botswana
+            %option{:value => "Bouvet Island"} Bouvet Island
+            %option{:value => "Brazil"} Brazil
+            %option{:value => "British Indian Ocean Territory"} British Indian Ocean Territory
+            %option{:value => "Brunei Darussalam"} Brunei Darussalam
+            %option{:value => "Bulgaria"} Bulgaria
+            %option{:value => "Burkina Faso"} Burkina Faso
+            %option{:value => "Burundi"} Burundi
+            %option{:value => "Cambodia"} Cambodia
+            %option{:value => "Cameroon"} Cameroon
+            %option{:value => "Canada"} Canada
+            %option{:value => "Cape Verde"} Cape Verde
+            %option{:value => "Cayman Islands"} Cayman Islands
+            %option{:value => "Central African Republic"} Central African Republic
+            %option{:value => "Chad"} Chad
+            %option{:value => "Chile"} Chile
+            %option{:value => "China"} China
+            %option{:value => "Christmas Island"} Christmas Island
+            %option{:value => "Cocos (Keeling) Islands"} Cocos (Keeling) Islands
+            %option{:value => "Colombia"} Colombia
+            %option{:value => "Comoros"} Comoros
+            %option{:value => "Congo"} Congo
+            %option{:value => "Cook Islands"} Cook Islands
+            %option{:value => "Costa Rica"} Costa Rica
+            %option{:value => "Cote D'Ivoire"} Cote D'Ivoire
+            %option{:value => "Croatia"} Croatia
+            %option{:value => "Cuba"} Cuba
+            %option{:value => "Curacao"} Curacao
+            %option{:value => "Cyprus"} Cyprus
+            %option{:value => "Czech Republic"} Czech Republic
+            %option{:value => "Democratic Republic of the Congo"} Democratic Republic of the Congo
+            %option{:value => "Denmark"} Denmark
+            %option{:value => "Djibouti"} Djibouti
+            %option{:value => "Dominica"} Dominica
+            %option{:value => "Dominican Republic"} Dominican Republic
+            %option{:value => "Ecuador"} Ecuador
+            %option{:value => "Egypt"} Egypt
+            %option{:value => "El Salvador"} El Salvador
+            %option{:value => "Equatorial Guinea"} Equatorial Guinea
+            %option{:value => "Eritrea"} Eritrea
+            %option{:value => "Estonia"} Estonia
+            %option{:value => "Ethiopia"} Ethiopia
+            %option{:value => "Falkland Islands"} Falkland Islands
+            %option{:value => "Faroe Islands"} Faroe Islands
+            %option{:value => "Fiji"} Fiji
+            %option{:value => "Finland"} Finland
+            %option{:value => "France"} France
+            %option{:value => "French Guiana"} French Guiana
+            %option{:value => "French Polynesia"} French Polynesia
+            %option{:value => "French Southern Territories"} French Southern Territories
+            %option{:value => "Gabon"} Gabon
+            %option{:value => "Gambia"} Gambia
+            %option{:value => "Georgia"} Georgia
+            %option{:value => "Germany"} Germany
+            %option{:value => "Ghana"} Ghana
+            %option{:value => "Gibraltar"} Gibraltar
+            %option{:value => "Greece"} Greece
+            %option{:value => "Greenland"} Greenland
+            %option{:value => "Grenada"} Grenada
+            %option{:value => "Guadeloupe"} Guadeloupe
+            %option{:value => "Guam"} Guam
+            %option{:value => "Guatemala"} Guatemala
+            %option{:value => "Guernsey"} Guernsey
+            %option{:value => "Guinea"} Guinea
+            %option{:value => "Guinea-Bissau"} Guinea-Bissau
+            %option{:value => "Guyana"} Guyana
+            %option{:value => "Haiti"} Haiti
+            %option{:value => "Heard and Mc Donald Islands"} Heard and Mc Donald Islands
+            %option{:value => "Honduras"} Honduras
+            %option{:value => "Hong Kong"} Hong Kong
+            %option{:value => "Hungary"} Hungary
+            %option{:value => "Iceland"} Iceland
+            %option{:value => "India"} India
+            %option{:value => "Indonesia"} Indonesia
+            %option{:value => "Iran"} Iran
+            %option{:value => "Iraq"} Iraq
+            %option{:value => "Ireland"} Ireland
+            %option{:value => "Isle of Man"} Isle of Man
+            %option{:value => "Israel"} Israel
+            %option{:value => "Italy"} Italy
+            %option{:value => "Jamaica"} Jamaica
+            %option{:value => "Japan"} Japan
+            %option{:value => "Jersey  (Channel Islands)"} Jersey  (Channel Islands)
+            %option{:value => "Jordan"} Jordan
+            %option{:value => "Kazakhstan"} Kazakhstan
+            %option{:value => "Kenya"} Kenya
+            %option{:value => "Kiribati"} Kiribati
+            %option{:value => "Kuwait"} Kuwait
+            %option{:value => "Kyrgyzstan"} Kyrgyzstan
+            %option{:value => "Lao People's Democratic Republic"} Lao People's Democratic Republic
+            %option{:value => "Latvia"} Latvia
+            %option{:value => "Lebanon"} Lebanon
+            %option{:value => "Lesotho"} Lesotho
+            %option{:value => "Liberia"} Liberia
+            %option{:value => "Libya"} Libya
+            %option{:value => "Liechtenstein"} Liechtenstein
+            %option{:value => "Lithuania"} Lithuania
+            %option{:value => "Luxembourg"} Luxembourg
+            %option{:value => "Macau"} Macau
+            %option{:value => "Macedonia"} Macedonia
+            %option{:value => "Madagascar"} Madagascar
+            %option{:value => "Malawi"} Malawi
+            %option{:value => "Malaysia"} Malaysia
+            %option{:value => "Maldives"} Maldives
+            %option{:value => "Mali"} Mali
+            %option{:value => "Malta"} Malta
+            %option{:value => "Marshall Islands"} Marshall Islands
+            %option{:value => "Martinique"} Martinique
+            %option{:value => "Mauritania"} Mauritania
+            %option{:value => "Mauritius"} Mauritius
+            %option{:value => "Mayotte"} Mayotte
+            %option{:value => "Mexico"} Mexico
+            %option{:value => "Micronesia, Federated States of"} Micronesia, Federated States of
+            %option{:value => "Moldova, Republic of"} Moldova, Republic of
+            %option{:value => "Monaco"} Monaco
+            %option{:value => "Mongolia"} Mongolia
+            %option{:value => "Montenegro"} Montenegro
+            %option{:value => "Montserrat"} Montserrat
+            %option{:value => "Morocco"} Morocco
+            %option{:value => "Mozambique"} Mozambique
+            %option{:value => "Myanmar"} Myanmar
+            %option{:value => "Namibia"} Namibia
+            %option{:value => "Nauru"} Nauru
+            %option{:value => "Nepal"} Nepal
+            %option{:value => "Netherlands"} Netherlands
+            %option{:value => "Netherlands Antilles"} Netherlands Antilles
+            %option{:value => "New Caledonia"} New Caledonia
+            %option{:value => "New Zealand"} New Zealand
+            %option{:value => "Nicaragua"} Nicaragua
+            %option{:value => "Niger"} Niger
+            %option{:value => "Nigeria"} Nigeria
+            %option{:value => "Niue"} Niue
+            %option{:value => "Norfolk Island"} Norfolk Island
+            %option{:value => "North Korea"} North Korea
+            %option{:value => "Northern Mariana Islands"} Northern Mariana Islands
+            %option{:value => "Norway"} Norway
+            %option{:value => "Oman"} Oman
+            %option{:value => "Pakistan"} Pakistan
+            %option{:value => "Palau"} Palau
+            %option{:value => "Palestine"} Palestine
+            %option{:value => "Panama"} Panama
+            %option{:value => "Papua New Guinea"} Papua New Guinea
+            %option{:value => "Paraguay"} Paraguay
+            %option{:value => "Peru"} Peru
+            %option{:value => "Philippines"} Philippines
+            %option{:value => "Pitcairn"} Pitcairn
+            %option{:value => "Poland"} Poland
+            %option{:value => "Portugal"} Portugal
+            %option{:value => "Puerto Rico"} Puerto Rico
+            %option{:value => "Qatar"} Qatar
+            %option{:value => "Republic of Kosovo"} Republic of Kosovo
+            %option{:value => "Reunion"} Reunion
+            %option{:value => "Romania"} Romania
+            %option{:value => "Russia"} Russia
+            %option{:value => "Rwanda"} Rwanda
+            %option{:value => "Saint Kitts and Nevis"} Saint Kitts and Nevis
+            %option{:value => "Saint Lucia"} Saint Lucia
+            %option{:value => "Saint Vincent and the Grenadines"} Saint Vincent and the Grenadines
+            %option{:value => "Samoa (Independent)"} Samoa (Independent)
+            %option{:value => "San Marino"} San Marino
+            %option{:value => "Sao Tome and Principe"} Sao Tome and Principe
+            %option{:value => "Saudi Arabia"} Saudi Arabia
+            %option{:value => "Senegal"} Senegal
+            %option{:value => "Serbia"} Serbia
+            %option{:value => "Seychelles"} Seychelles
+            %option{:value => "Sierra Leone"} Sierra Leone
+            %option{:value => "Singapore"} Singapore
+            %option{:value => "Sint Maarten"} Sint Maarten
+            %option{:value => "Slovakia"} Slovakia
+            %option{:value => "Slovenia"} Slovenia
+            %option{:value => "Solomon Islands"} Solomon Islands
+            %option{:value => "Somalia"} Somalia
+            %option{:value => "South Africa"} South Africa
+            %option{:value => "South Georgia and the South Sandwich Islands"} South Georgia and the South Sandwich Islands
+            %option{:value => "South Korea"} South Korea
+            %option{:value => "South Sudan"} South Sudan
+            %option{:value => "Spain"} Spain
+            %option{:value => "Sri Lanka"} Sri Lanka
+            %option{:value => "St. Helena"} St. Helena
+            %option{:value => "St. Pierre and Miquelon"} St. Pierre and Miquelon
+            %option{:value => "Sudan"} Sudan
+            %option{:value => "Suriname"} Suriname
+            %option{:value => "Svalbard and Jan Mayen Islands"} Svalbard and Jan Mayen Islands
+            %option{:value => "Swaziland"} Swaziland
+            %option{:value => "Sweden"} Sweden
+            %option{:value => "Switzerland"} Switzerland
+            %option{:value => "Syria"} Syria
+            %option{:value => "Taiwan"} Taiwan
+            %option{:value => "Tajikistan"} Tajikistan
+            %option{:value => "Tanzania"} Tanzania
+            %option{:value => "Thailand"} Thailand
+            %option{:value => "Timor-Leste"} Timor-Leste
+            %option{:value => "Togo"} Togo
+            %option{:value => "Tokelau"} Tokelau
+            %option{:value => "Tonga"} Tonga
+            %option{:value => "Trinidad and Tobago"} Trinidad and Tobago
+            %option{:value => "Tunisia"} Tunisia
+            %option{:value => "Turkey"} Turkey
+            %option{:value => "Turkmenistan"} Turkmenistan
+            %option{:value => "Turks & Caicos Islands"} Turks & Caicos Islands
+            %option{:value => "Turks and Caicos Islands"} Turks and Caicos Islands
+            %option{:value => "Tuvalu"} Tuvalu
+            %option{:value => "Uganda"} Uganda
+            %option{:value => "Ukraine"} Ukraine
+            %option{:value => "United Arab Emirates"} United Arab Emirates
+            %option{:value => "United Kingdom"} United Kingdom
+            %option{:value => "Uruguay"} Uruguay
+            %option{:value => "USA Minor Outlying Islands"} USA Minor Outlying Islands
+            %option{:value => "Uzbekistan"} Uzbekistan
+            %option{:value => "Vanuatu"} Vanuatu
+            %option{:value => "Vatican City State (Holy See)"} Vatican City State (Holy See)
+            %option{:value => "Venezuela"} Venezuela
+            %option{:value => "Vietnam"} Vietnam
+            %option{:value => "Virgin Islands (British)"} Virgin Islands (British)
+            %option{:value => "Virgin Islands (U.S.)"} Virgin Islands (U.S.)
+            %option{:value => "Wallis and Futuna Islands"} Wallis and Futuna Islands
+            %option{:value => "Western Sahara"} Western Sahara
+            %option{:value => "Yemen"} Yemen
+            %option{:value => "Zambia"} Zambia
+            %option{:value => "Zimbabwe"} Zimbabwe
+        %div
+          %label{for: "PASAPORTE"}Passport number *
+          %input{type: "text", name: "PASAPORTE", required: true}
+        %label Birthdate *
+        .grid
+          %input.datefield{maxlength: "2", name: "BIRTHDAY[month]", pattern: "[0-9]*", placeholder: "MM", size: "2", type: "text", required: true}/
+          &nbsp; &#47; &nbsp;
+          %input.datefield{maxlength: "2", name: "BIRTHDAY[day]", pattern: "[0-9]*", placeholder: "DD", size: "2", type: "text", value: "", required: true}/
+          &nbsp; &#47; &nbsp;
+          %input.datefield{maxlength: "4", name: "BIRTHDAY[year]", pattern: "[0-9]*", placeholder: "YYYY", size: "4", type: "text", value: "", required: true}/
+          %small ( mm / dd / yyyy )
+        %div
+          %label{for: "ALIMENTACI"}Meal type
+          %select{name: "ALIMENTACI"}
+            %option{ value: "", selected: true }Meal..
+            %option{ value: "vegetarianoIndu" }Indian Vegetarian
+            %option{ value: "blanda" }Soft
+            %option{ value: "diabetica" }Diabetic
+            %option{ value: "frutas" }Fruits
+            %option{ value: "intoleranteGluten" }Gluten Intolerant
+            %option{ value: "kosher" }Kosher
+            %option{ value: "bajaCalorias" }Low calories
+            %option{ value: "bajaGrasas" }Low fat
+            %option{ value: "bajaSal" }Low salt
+            %option{ value: "musulmana" }Muslim
+          %ul
+            %label{for: "mce-group[19721]-19721"}Additional Amenities
+            %li
+              %input{id: "mce-group[19721]-19721-0", name: "group[19721][32]", type: "checkbox", value: "32"}/
+              Emerald mines tour
+            %li
+              %input{id: "mce-group[19721]-19721-1", name: "group[19721][64]", type: "checkbox", value: "64"}/
+              Historical Bogot&aacute;, cultural tour
+            %li
+              %input{id: "mce-group[19721]-19721-2", name: "group[19721][128]", type: "checkbox", value: "128"}/
+              Hotel accomodation where the event takes place
+              %small (King size bed room, breakfast included)
+        .modal
+          %label{for: "modal-1"}
+            .modal-trigger Travel requirements for Colombia
+          %input#modal-1.modal-state{type: "checkbox"}/
+          .modal-fade-screen
+            .modal-inner
+              .modal-close{for: "modal-1"}
+              %h1 Travel requirements for Colombia
+              %p.modal-intro
+                Before arranging your travel plans to the symposium |
+                please keep in mind the following recommendations.  |
+              %article.modal-content
+                - 5.times do
+                  %p= lorem.paragraph
+        / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+        %div{:style => "position: absolute; left: -5000px;"}
+          %input{:name => "b_c1a7d035395ac1cb5dbdc16e4_feee43f9e7", :tabindex => "-1", :type => "text", :value => ""}/
+        %button.submit-payment{name: "subscribe", type: "submit"}Submit registration
+      %footer
+        %h1 Registration payment includes
+        %p
+          A unique knowledge building experience &bull; |
+          Access to all areas of the event &bull;       |
+          Symposium proceedings &bull;                  |
+          Welcom kit &bull;                             |
+          Attendance certificate &bull;                 |
+          Coffee Break AM &amp; PM &bull;               |
+          Lunch                                         |

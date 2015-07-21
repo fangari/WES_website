@@ -1,0 +1,142 @@
+---
+title: "1st International Emerald Symposium"
+layout: layout
+---
+%main.form.container
+  %aside
+    %h1{hidden: true} Registration for citizens of other countries
+    = image_tag "titulo_formulario.png", class: "title"
+    = image_tag "pinza_esmeralda.png"
+  %article
+    %form.grid{method: "post"}
+      %section.right-separator
+        %label{for: "nombre"}Name
+        .grid
+          %select.grid-1of4{name: "titulo"}
+            %option Mr.
+            %option Mrs.
+          %input.grid-3of4{type: "text", name: "nombre", placeholder: "First name"}
+        %input{type: "text", name: "apellidos", placeholder: "Last name"}
+        %label{for: "cedula"} ID number
+        %input{type: "text", name: "cedula"}
+        %label{for: "empresa"}Company name
+        %input{type: "text", name: "empresa", placeholder: "Company"}
+        %label{for: "campoDeTrabajo"}Nature of Business
+        .grid
+          .grid-1of2
+            %input{type: "checkbox", name: "campoDeTrabajo", id: "ventas"}Sales
+            %input{type: "checkbox", name: "campoDeTrabajo", id: "exhibicion"}Exhibition
+            %br
+            %input{type: "checkbox", name: "campoDeTrabajo", id: "mineria"}Mining
+            %input{type: "checkbox", name: "campoDeTrabajo", id: "lapidario"}Cutting
+          .grid-1of2
+            %input{type: "checkbox", name: "campoDeTrabajo", id: "otro"}Other
+            %input{type: "text", name: "otroCampo", placeholder: "Please specify"}
+        %div
+          %label{for: "direccion1"}Address
+          %input{type: "text", name: "direccion1", placeholder: "Address 1"}
+          %input{type: "text", name: "direccion2", placeholder: "Address 2"}
+          %input{type: "text", name: "ciudad", placeholder: "City"}
+          %input{type: "text", name: "estado", placeholder: "State/Province/Region"}
+          %input{type: "text", name: "codigoPostal", placeholder: "Zip code"}
+        %div
+          %label{for: "telefono1"}Phone number 1
+          %input{type: "tel", name: "telefono1"}
+          %label{for: "telefono2"}Phone number 2
+          %input{type: "tel", name: "telefono2"}
+        %div
+          %label{for: "email"}Email
+          %input{type: "email", name: "email"}
+      %section
+        %label Day of Birth
+        .grid
+          %select.grid-1of3{name: "dia"}
+            %option{value: "dia", selected: true}Day
+            %option{ :value => "1" } 1
+            %option{ :value => "2" } 2
+            %option{ :value => "3" } 3
+            %option{ :value => "4" } 4
+            %option{ :value => "5" } 5
+            %option{ :value => "6" } 6
+            %option{ :value => "7" } 7
+            %option{ :value => "8" } 8
+            %option{ :value => "9" } 9
+            %option{ :value => "10" } 10
+            %option{ :value => "11" } 11
+            %option{ :value => "12" } 12
+            %option{ :value => "13" } 13
+            %option{ :value => "14" } 14
+            %option{ :value => "15" } 15
+            %option{ :value => "16" } 16
+            %option{ :value => "17" } 17
+            %option{ :value => "18" } 18
+            %option{ :value => "19" } 19
+            %option{ :value => "20" } 20
+            %option{ :value => "21" } 21
+            %option{ :value => "22" } 22
+            %option{ :value => "23" } 23
+            %option{ :value => "24" } 24
+            %option{ :value => "25" } 25
+            %option{ :value => "26" } 26
+            %option{ :value => "27" } 27
+            %option{ :value => "28" } 28
+            %option{ :value => "29" } 29
+            %option{ :value => "30" } 30
+            %option{ :value => "31" } 31
+          %select.grid-1of3{name: "mes"}
+            %option{ value: "", selected: true }Month
+            %option{ :value => "1" } 1
+            %option{ :value => "2" } 2
+            %option{ :value => "3" } 3
+            %option{ :value => "4" } 4
+            %option{ :value => "5" } 5
+            %option{ :value => "6" } 6
+            %option{ :value => "7" } 7
+            %option{ :value => "8" } 8
+            %option{ :value => "9" } 9
+            %option{ :value => "10" } 10
+            %option{ :value => "11" } 11
+            %option{ :value => "12" } 12
+          %input.grid-1of3{type: "text", min: "4", max: "4", placeholder: "YYYY", size: "4"}
+        %div
+          %label{for: "comida"}Meal type
+          %select{name: "comida"}
+            %option{ value: "", selected: true }Meal..
+            %option{ value: "vegetarianoIndu" }Indian Vegetarian
+            %option{ value: "blanda" }Soft
+            %option{ value: "diabetica" }Diabetic
+            %option{ value: "frutas" }Fruits
+            %option{ value: "intoleranteGluten" }Gluten Intolerant
+            %option{ value: "kosher" }Kosher
+            %option{ value: "bajaCalorias" }Low Calories
+            %option{ value: "bajaGrasas" }Low fat
+            %option{ value: "bajaSal" }Low salt
+            %option{ value: "musulmana" }Muslim
+        %div
+          %label{for: "incluye"}Additional Amenities
+          %input{type: "checkbox", name: "incluye"} Emerald mines Tour
+          %br
+          %input{type: "checkbox", name: "incluye"} Bogot&aacute; cultural tour
+          %br
+          %input{type: "checkbox", name: "incluye"}
+            Hotel accommodation where the event takes place
+            %br
+            %small (King size bed room, breakfast included)
+        %p
+          This is a
+          %b pre-registration
+          form.
+        %p You will receive a confirmation email to attend the event once admission is granted.
+        %h2 ADMITTANCE SUBJECT TO AVAILABILITY
+        %button.submit-payment{type: "submit"}Submit Registration
+      %footer
+        %h1 Registration payment includes
+        %p
+          A unique knowledge building experience &bull; |
+          Access to all areas of the event &bull;       |
+          Symposium proceedings &bull;                  |
+          Welcome Kit &bull;                            |
+          Attendance certificate &bull;                 |
+          Coffee Break AM y PM &bull;                   |
+          Lunch                                         |
+

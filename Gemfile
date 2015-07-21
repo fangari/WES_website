@@ -2,13 +2,13 @@
 # the following line to use 'http://' instead
 source 'https://rubygems.org'
 
-gem 'middleman', '~>3.3.12'
+gem 'middleman', '~> 3.3'
 
-# Live-reloading plugin
-gem 'middleman-livereload', '~> 3.3.4'
+gem 'middleman-livereload', '~> 3.4'
 gem 'middleman-imageoptim'
 gem 'middleman-minify-html'
 gem 'middleman-inliner'
+gem 'middleman-deploy'
 
 # Styling Gems
 gem 'bitters', '~> 1.0.0'

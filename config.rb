@@ -2,6 +2,11 @@
 # Helpers
 ###
 
+helpers
+
+# Activate localization for multiple language support
+activate :i18n, mount_at_root: false, langs: [:en, :es]
+
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 activate :directory_indexes
@@ -23,13 +28,34 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :gzip
-  activate :image_optim
-  activate :minify_html
+  activate :imageoptim do |options|
+    options.manifest = true
+    options.nice = true
+    options.threads = true
+    options.image_extensions = %w(.png .jpg)
+  end
+  activate :minify_html, remove_input_attributes: false
   activate :asset_hash
   activate :relative_assets
 end
 
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.method = :ftp
+case ENV['TARGET'].to_s.downcase
+when 'production'
+  activate :deploy do |deploy|
+    deploy.method       = :ftp
+    deploy.host         = 'ftp.worldemeraldsymposium.com'
+    deploy.port         = 21
+    deploy.path         = 'public_html'
+    deploy.user         = 'worlqezp'
+    deploy.password     = 'Qm-PUK1roOADR'
+  end
+else
+  activate :deploy do |deploy|
+    deploy.method       = :ftp
+    deploy.host         = 'ftp.worldemeraldsymposium.com'
+    deploy.port         = 21
+    deploy.path         = 'public_html/staging'
+    deploy.user         = 'worlqezp'
+    deploy.password     = 'Qm-PUK1roOADR'
+  end
 end

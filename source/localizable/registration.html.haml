@@ -1,0 +1,15 @@
+---
+title: "1st International Emerald Symposium"
+layout: layout
+---
+%main.container.registration
+  %section.flash-note.highlight
+    = t(:registration_warning)
+  %section.form-gateway.right-separator
+    %h1= t("citizen-form-title")
+    = localized_link_to "citizen-registration" do
+      %button= t(:register)
+  %section.form-gateway
+    %h1= t("non-citizen-form-title")
+    = localized_link_to "non-citizen-registration" do
+      %button= t(:register)
