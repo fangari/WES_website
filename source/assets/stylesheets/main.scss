@@ -71,6 +71,7 @@ body {
 main {
     width: 100%;
     padding: 20px;
+    min-height: 60vh;
 }
 
 footer {
@@ -167,15 +168,14 @@ nav li a {
 .tagline {
     text-align: center;
     background: hsla(182, 96, 16, 0.8);
-    padding: 20px 50px;
+    padding: 10px 50px;
     flex: 20%;
-    margin-bottom: 45px;
 }
 
 .tagline h1 {
-    align-self: center;
     font-size: 45px;
     font-weight: 700;
+    margin: 0;
 
 }
 
@@ -319,8 +319,11 @@ nav li a {
     }
 }
 
+.registration {
+    flex-flow: column nowrap;
+}
+
 .flash-note {
-    flex: 100%;
     text-align: center;
     font-size: 1em;
     padding: 15px;
