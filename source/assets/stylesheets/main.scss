@@ -65,7 +65,7 @@ Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
-    background: radial-gradient(ellipse farthest-corner, rgba(0,0,0,0), rgba(0,0,0,1)), $base_background;
+    background: radial-gradient(ellipse farthest-corner, rgba(0,0,0,0), rgba(0,0,0,0.6)), image-url("speckled-noise.svg"), gray;
 }
 
 main {
