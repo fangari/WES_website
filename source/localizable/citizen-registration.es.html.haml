@@ -8,6 +8,9 @@ layout: layout
     = image_tag "titulo_formulario.png", class: "title"
     = image_tag "pinza_esmeralda.png"
   %article
+    .indicates-required
+      %span.asterisk*
+      indica un campo requerido
     %form.grid{method: "post"}
       %section.right-separator
         %label{for: "nombre"}Nombre
@@ -24,107 +27,77 @@ layout: layout
         %label{for: "campoDeTrabajo"}Campo de Trabajo
         .grid
           .grid-1of2
-            %input{type: "checkbox", name: "campoDeTrabajo", id: "ventas"}Ventas
-            %input{type: "checkbox", name: "campoDeTrabajo", id: "exhibicion"}Exhibición
-            %input{type: "checkbox", name: "campoDeTrabajo", id: "mineria"}Miner&iacute;a
-            %input{type: "checkbox", name: "campoDeTrabajo", id: "lapidario"}Lapidario
+            %ul
+              %li
+                %input{type: "checkbox", name: "campoDeTrabajo", id: "ventas"}
+                Ventas
+              %li
+                %input{type: "checkbox", name: "campoDeTrabajo", id: "exhibicion"}
+                Exhibición
+              %li
+                %input{type: "checkbox", name: "campoDeTrabajo", id: "mineria"}
+                Miner&iacute;a
+              %li
+                %input{type: "checkbox", name: "campoDeTrabajo", id: "lapidario"}
+                Lapidario
           .grid-1of2
-            %input{type: "checkbox", name: "campoDeTrabajo", id: "otro"}Otro
-            %input{type: "text", name: "otroCampo", placeholder: "Especifique cuál"}
+            %ul
+              %li
+                %input{type: "checkbox", name: "campoDeTrabajo", id: "otro"}
+                Otro
+              %li
+                %input{type: "text", name: "otroCampo", placeholder: "Especifique cuál"}
         %div
           %label{for: "direccion1"}Direcci&oacute;n
           %input{type: "text", name: "direccion1", placeholder: "Dirección 1"}
           %input{type: "text", name: "direccion2", placeholder: "Dirección 2"}
-          %input{type: "text", name: "ciudad", placeholder: "ciudad"}
-          %input{type: "text", name: "estado", placeholder: "Estado/Provincia/Region"}
+          %input.half-right{type: "text", name: "ciudad", placeholder: "ciudad"}
+          %input.half-left{type: "text", name: "estado", placeholder: "Estado/Provincia/Region"}
           %input{type: "text", name: "codigoPostal", placeholder: "Código Postal"}
         %div
-          %label{for: "telefono1"}Tel&eacute;fono 1
-          %input{type: "tel", name: "telefono1"}
-          %label{for: "telefono2"}Tel&eacute;fono 2
-          %input{type: "tel", name: "telefono2"}
+          .half-right
+            %label{for: "telefono1"}Tel&eacute;fono 1
+            %input{type: "tel", name: "telefono1"}
+          .half-left
+            %label{for: "telefono2"}Tel&eacute;fono 2
+            %input{type: "tel", name: "telefono2"}
         %div
           %label{for: "email"}Correo Electr&oacute;nico
           %input{type: "email", name: "email"}
       %section
-        %label Fecha de Nacimiento
+        %label Fecha de Nacimiento *
         .grid
-          %select.grid-1of3{name: "dia"}
-            %option{value: "dia", selected: true}D&iacute;a
-            %option{ :value => "1" } 1
-            %option{ :value => "2" } 2
-            %option{ :value => "3" } 3
-            %option{ :value => "4" } 4
-            %option{ :value => "5" } 5
-            %option{ :value => "6" } 6
-            %option{ :value => "7" } 7
-            %option{ :value => "8" } 8
-            %option{ :value => "9" } 9
-            %option{ :value => "10" } 10
-            %option{ :value => "11" } 11
-            %option{ :value => "12" } 12
-            %option{ :value => "13" } 13
-            %option{ :value => "14" } 14
-            %option{ :value => "15" } 15
-            %option{ :value => "16" } 16
-            %option{ :value => "17" } 17
-            %option{ :value => "18" } 18
-            %option{ :value => "19" } 19
-            %option{ :value => "20" } 20
-            %option{ :value => "21" } 21
-            %option{ :value => "22" } 22
-            %option{ :value => "23" } 23
-            %option{ :value => "24" } 24
-            %option{ :value => "25" } 25
-            %option{ :value => "26" } 26
-            %option{ :value => "27" } 27
-            %option{ :value => "28" } 28
-            %option{ :value => "29" } 29
-            %option{ :value => "30" } 30
-            %option{ :value => "31" } 31
-          %select.grid-1of3{name: "mes"}
-            %option{ value: "", selected: true } Mes
-            %option{ :value => "1" } 1
-            %option{ :value => "2" } 2
-            %option{ :value => "3" } 3
-            %option{ :value => "4" } 4
-            %option{ :value => "5" } 5
-            %option{ :value => "6" } 6
-            %option{ :value => "7" } 7
-            %option{ :value => "8" } 8
-            %option{ :value => "9" } 9
-            %option{ :value => "10" } 10
-            %option{ :value => "11" } 11
-            %option{ :value => "12" } 12
-          %input.grid-1of3{type: "text", min: "4", max: "4", placeholder: "YYYY", size: "4"}
+          %input.datefield{maxlength: "2", name: "BIRTHDAY[month]", pattern: "[0-9]*", placeholder: "MM", size: "2", type: "text", required: true}/
+          &nbsp; &#47; &nbsp;
+          %input.datefield{maxlength: "2", name: "BIRTHDAY[day]", pattern: "[0-9]*", placeholder: "DD", size: "2", type: "text", value: "", required: true}/
+          &nbsp; &#47; &nbsp;
+          %input.datefield{maxlength: "4", name: "BIRTHDAY[year]", pattern: "[0-9]*", placeholder: "AAAA", size: "4", type: "text", value: "", required: true}/
+          %small ( mm / dd / aaaa )
         %div
           %label{for: "comida"}Tipo de Alimentaci&oacute;n
           %select{name: "comida"}
             %option{ value: "", selected: true }Dieta..
-            %option{ value: "vegetarianoIndu" }Vegetariana Ind&uacute;
-            %option{ value: "blanda" } Blanda
-            %option{ value: "diabetica" }Diab&eacute;tico
-            %option{ value: "frutas" }Frutas
-            %option{ value: "intoleranteGluten" }Intolerante al Gluten
+            %option{ value: "vegetariano" }Vegetariana
             %option{ value: "kosher" }Kosher
-            %option{ value: "bajaCalorias" }Baja en Calor&iacute;as
-            %option{ value: "bajaGrasas" }Baja en Grasas
-            %option{ value: "bajaSal" }Baja en Sal
-            %option{ value: "musulmana" }Musulmana
+            %option{ value: "regular" }Regular
         %div
-          %label{for: "incluye"}Incluir en el plan
-          %input{type: "checkbox", name: "incluye"} Tour a las minas de esmeraldas
+          %ul
+            %label{for: "incluye"}Incluir en el plan
+            %li
+              %input{type: "checkbox", name: "incluye"}
+              Acceso VIP
+              %small (Alimentaci&oacute;n, eventos especiales, no incluye tours)
+            %li
+              %input{type: "checkbox", name: "incluye"}
+              Estad&iacute;a en el hotel donde se realiza el evento
+              %small (Habitaci&oacute;n con cama doble, ba&ntilde;o privado, televisi&oacute;n y desayunos)
+        %section
           %br
-          %input{type: "checkbox", name: "incluye"} Tour cultural por Bogot&aacute;
-          %br
-          %input{type: "checkbox", name: "incluye"}
-            Estad&iacute;a en el hotel donde se realiza el evento
-            %small (Habitaci&oacute;n con cama doble, ba&ntilde;o privado, televisi&oacute;n y desayunos)
-        %p
-          Este formulario es de
-          %b PREINSCRIPCI&Oacute;N.
-        %p A vuelta de correo recibir&aacute; la confirmaci&oacute;n para poder ingresar al evento
-        %h2 CUPOS LIMITADOS
+          %p
+            Este formulario es de
+            %b PREINSCRIPCI&Oacute;N.
+          %p A vuelta de correo recibir&aacute; la confirmaci&oacute;n para poder ingresar al evento
+          %h2{style: "text-align:center;"} CUPOS LIMITADOS
         %button.submit-payment{type: "submit"}Enviar Formulario
       %footer
         %h1 El pago de la inscripci&oacute;n incluye
@@ -134,6 +107,5 @@ layout: layout
           Memorias del evento &bull;                                      |
           Kit de bienvenida &bull;                                        |
           Certificado de asistencia &bull;                                |
-          Coffee Break AM y PM &bull;                                     |
-          Almuerzo                                                        |
+          Coffee Break AM y PM                                      |
 
