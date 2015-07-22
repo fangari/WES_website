@@ -24,6 +24,8 @@ end
 
 # Build-specific configuration
 activate :inliner
+set :url_root, 'https://worldemeraldsymposium.com'
+activate :search_engine_sitemap
 configure :build do
   activate :minify_css
   activate :minify_javascript

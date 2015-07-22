@@ -9,6 +9,7 @@ gem 'middleman-imageoptim'
 gem 'middleman-minify-html'
 gem 'middleman-inliner'
 gem 'middleman-deploy'
+gem 'middleman-search_engine_sitemap'
 
 # Styling Gems
 gem 'bitters', '~> 1.0.0'
