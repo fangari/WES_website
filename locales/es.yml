@@ -52,3 +52,10 @@ es:
   # Footer
   super_first: "er"
   copyright: "Simposio Internacional de Esmeraldas"
+
+  # 404
+  not_found: "No encontrada"
+  sorry: "Disculpenos, pero la p&aacute;gina que est&aacute; intentando encontrar no existe."
+  result: "Parece ser que esto es el resultado de: "
+  wrong_address: "una direcci&oacuten web mal escrita"
+  bad_link: "un enlace desactualizado"

@@ -54,3 +54,10 @@ en:
   # Footer
   super_first: "st"
   copyright: "International Emerald Symposium"
+
+  # 404
+  not_found: "Not found"
+  sorry: "Sorry, but the page you were trying to view does not exist."
+  result: "It looks like this was the result of either: "
+  wrong_address: "a mistyped address"
+  bad_link: "an out-of-date link"
