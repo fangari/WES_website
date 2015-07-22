@@ -27,7 +27,7 @@ en:
   queries: "Queries"
 
   # Agenda
-  tracks: "Conference Tracks"
+  tracks: "Symposium Tracks"
   speakers: "Keynotes and Sessions"
   keynote_slot: "Keynote date and time"
 
@@ -49,7 +49,7 @@ en:
   hosting: "Symposium venue"
 
   # Contact
-  sponsored: "Sponsored by"
+  sponsored: "Organized by"
 
   # Footer
   super_first: "st"
