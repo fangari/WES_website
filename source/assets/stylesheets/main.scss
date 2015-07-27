@@ -96,22 +96,28 @@ section {
 }
 
 .logo {
-    flex: 0 0 25%;
+    flex: 25%;
     order: 1;
     padding-top: 10px;
     padding-left: 10px;
     align-self: center;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-right: 20px;
 }
 
 nav {
-    flex: 0 0 70%;
+    flex: 70%;
     order: 2;
+    text-align: center;
     align-self: center;
     justify-content: space-around;
 }
 
 nav li {
     display: inline-block;
+    margin-bottom: 25px;
 }
 
 nav li a {
