@@ -4,25 +4,26 @@ layout: landing
 lang: es
 ---
 .landing-container
-  %section.logos-container
-    = image_tag "blk_logo_en.png"
-    = image_tag "be_change_logo_en.png"
-  %section.tagline
-    %h1
-      = t(:tagline)
-  %section.navigation
-    .upper-half
-      = localized_link_to "symposium", "symposium", class: "speech-bubble right-bottom right-triangle"
-      = localized_link_to "home", "home", class: "active speech-bubble left-bottom left-triangle"
-    .lower-half
-      .left-menu
-        = localized_link_to "registration", "registration", class: "active speech-bubble right-bottom right-triangle"
-        = localized_link_to "schedule", "schedule", class: "speech-bubble center-right mid-right-triangle"
-      =image_tag "center_emerald.png"
-      .right-menu
-        = localized_link_to "recommended", "recommended-hotels", class: "speech-bubble left-bottom left-triangle"
-        = localized_link_to "contact", "contact", class: "active speech-bubble center-left mid-left-triangle"
-  .colombia-flag-bar
-  %footer
-    %b Caño Cristales
-    Macarena - Meta
+  %main
+    %section.logos-container
+      = image_tag "blk_logo_en.png"
+      = image_tag "be_change_logo_en.png"
+    %section.tagline
+      %h1
+        = t(:tagline)
+    %section.navigation
+      .upper-half
+        = localized_link_to "symposium", "symposium", class: "speech-bubble right-bottom right-triangle"
+        = localized_link_to "home", "home", class: "active speech-bubble left-bottom left-triangle"
+      .lower-half
+        .left-menu
+          = localized_link_to "registration", "registration", class: "active speech-bubble right-bottom right-triangle"
+          = localized_link_to "schedule", "schedule", class: "speech-bubble center-right mid-right-triangle"
+        =image_tag "center_emerald.png"
+        .right-menu
+          = localized_link_to "recommended", "recommended-hotels", class: "speech-bubble left-bottom left-triangle"
+          = localized_link_to "contact", "contact", class: "active speech-bubble center-left mid-left-triangle"
+    .colombia-flag-bar
+    %footer
+      %b Caño Cristales
+      Macarena - Meta
