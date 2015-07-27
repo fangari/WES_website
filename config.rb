@@ -27,6 +27,9 @@ activate :inliner
 set :url_root, 'https://worldemeraldsymposium.com'
 activate :search_engine_sitemap
 configure :build do
+  activate :autoprefixer do |config|
+    config.browsers = ['last 2 versions', '> 5%', 'Explorer >= 9']
+  end
   activate :minify_css
   activate :minify_javascript
   activate :gzip
