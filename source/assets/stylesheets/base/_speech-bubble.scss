@@ -45,7 +45,7 @@ nav .speech-bubble {
 }
 
 .highlight {
-  background-color: $highlight; 
+  background-color: $highlight;
 }
 
 .speech-bubble:before {
@@ -53,7 +53,7 @@ nav .speech-bubble {
   position: absolute;
   width: 0;
   height: 0;
-  border: 10px solid;
+  border: 10px solid transparent;
 }
 
 .mid-bottom:before {

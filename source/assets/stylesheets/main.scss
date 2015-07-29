@@ -238,12 +238,14 @@ nav li a {
     aside {
         @include flex(38%);
         @include align-self(center);
+        @include order(2);
         text-align: center;
         margin: 0px 18px 20px 0;
     }
 
     article {
         @include flex(60%);
+        @include order(1);
     }
 
     h2 {
