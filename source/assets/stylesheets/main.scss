@@ -234,13 +234,15 @@ nav li a {
 }
 
 .mission-statement {
-
+    @include flex-wrap(wrap-reverse);
+    padding: 0 20px;
     aside {
         @include flex(38%);
         @include align-self(center);
         @include order(2);
         text-align: center;
-        margin: 0px 18px 20px 0;
+        padding: 0;
+        margin: 0 0 20px 15px;
     }
 
     article {
@@ -250,6 +252,7 @@ nav li a {
 
     h2 {
         font-size: 3em;
+        margin-left: 15px;
         margin-bottom: 0.5em;
     }
 
@@ -272,7 +275,7 @@ nav li a {
         @include flex(25%);
         @include order(2);
         @include align-self(center);
-        margin: 0 8px;
+        margin: 0 10px;
         h1 {
             text-align: center;
             font-size: 3em;
@@ -286,13 +289,13 @@ nav li a {
     }
 
     .left-reasons {
-        @include flex(35%);
+        @include flex(34%);
         @include order(1);
         margin: 0 10px;
     }
 
     .right-reasons {
-        @include flex(35%);
+        @include flex(34%);
         @include order(3);
         margin: 0 10px;
     }
