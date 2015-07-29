@@ -89,15 +89,15 @@ section {
 }
 
 .container {
-    display: flex;
+    @include display(flex);
+    @include justify-content(space-around);
+    @include flex-flow(row wrap);
     padding: 20px;
-    justify-content: space-around;
-    flex-flow: row wrap;
 }
 
 .logo {
-    flex: 25%;
-    order: 1;
+    @include flex(25%);
+    @include order(1);
     padding-top: 10px;
     padding-left: 10px;
     align-self: center;
@@ -108,11 +108,11 @@ section {
 }
 
 nav {
-    flex: 70%;
-    order: 2;
+    @include flex(70%);
+    @include order(2);
+    @include align-self(center);
+    @include justify-content(space-around);
     text-align: center;
-    align-self: center;
-    justify-content: space-around;
 }
 
 nav li {
@@ -127,10 +127,10 @@ nav li a {
 
 .landing-container {
     background: no-repeat center/cover url(image-path("canocristales.jpg"));
-    display: flex;
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(center);
     min-height: 100vh;
-    flex-direction: column;
-    justify-content: center;
     & footer {
         text-align: left;
         background: rgba(0, 0, 0, 0.7);
@@ -164,12 +164,12 @@ nav li a {
 }
 
 .logos-container, .navigation {
-    flex: 1;
+    @include flex(1);
 }
 
 .logos-container {
-    display: flex;
-    justify-content: space-around;
+    @include display(flex);
+    @include justify-content(space-around);
     margin-top: 50px;
 }
 
@@ -177,7 +177,7 @@ nav li a {
     text-align: center;
     background: hsla(182, 96, 16, 0.8);
     padding: 10px 50px;
-    flex: 20%;
+    @include flex(20%);
 }
 
 .tagline h1 {
@@ -188,8 +188,8 @@ nav li a {
 }
 
 .upper-half {
-    display: flex;
-    justify-content: center;
+    @include display(flex);
+    @include justify-content(center);
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 40px;
@@ -199,8 +199,8 @@ nav li a {
 }
 
 .lower-half {
-    display: flex;
-    justify-content: center;
+    @include display(flex);
+    @include justify-content(center);
 }
 
 .left-menu {
@@ -220,14 +220,14 @@ nav li a {
 .mission-statement {
 
     aside {
-        flex: 38%;
-        align-self: center;
+        @include flex(38%);
+        @include align-self(center);
         text-align: center;
         margin: 0px 18px 20px 0;
     }
 
     article {
-        flex: 60%;
+        @include flex(60%);
     }
 
     h2 {
@@ -250,9 +250,9 @@ nav li a {
     margin-top: 50px;
 
     .title {
-        flex: 25%;
-        order: 2;
-        align-self: center;
+        @include flex(25%);
+        @include order(2);
+        @include align-self(center);
         margin: 0 8px;
         h1 {
             text-align: center;
@@ -267,26 +267,26 @@ nav li a {
     }
 
     .left-reasons {
-        flex: 35%;
-        order: 1;
+        @include flex(35%);
+        @include order(1);
         margin: 0 10px;
     }
 
     .right-reasons {
-        flex: 35%;
-        order: 3;
+        @include flex(35%);
+        @include order(3);
         margin: 0 10px;
     }
 }
 
 .contact {
-    justify-content: center;
-    flex-flow: column;
+    @include justify-content(center);
+    @include flex-flow(column);
     text-align: center;
 
     footer {
         height: 70px;
-        background: no-repeat center/cover url(image-path("bottom_bg.png")); 
+        background: no-repeat center/cover url(image-path("bottom_bg.png"));
     }
 
     h1, .details {
@@ -296,7 +296,7 @@ nav li a {
     }
 
     .aditional-contacts {
-        align-self: center;
+        @include align-self(center);
         li {
             margin-bottom: 40px;
             text-align: right;
@@ -309,20 +309,22 @@ nav li a {
     }
 }
 
-.sponsors {
-    flex: 100%;
+.sponsors, .organizers {
+    @include flex(100%);
     background-color: $white;
-    img {
+    li {
+        display: inline-block;
         margin: 5px;
-        align-self: center;
+        @include align-self(center);
     }
     &.container {
-        justify-content: space-around;
+        @include justify-content(space-around);
+        padding: 0 5px;
     }
 }
 
 .registration {
-    flex-flow: column nowrap;
+    @include flex-flow(column nowrap);
 }
 
 .flash-note {
@@ -332,7 +334,7 @@ nav li a {
 }
 
 .form-gateway {
-    flex: 50%;
+    @include flex(50%);
     text-align: center;
     button {
         display: block;
@@ -351,12 +353,12 @@ nav li a {
 
 .form {
     & > aside {
-        flex: 30%;
+        @include flex(30%);
+        @include align-self(center);
         text-align: center;
-        align-self: center;
     }
     & > article {
-        flex: 70%;
+        @include flex(70%);
         background-color: $highlight;
         padding: 20px;
     }
@@ -415,13 +417,13 @@ nav li a {
 
 .speakers {
     .container {
-        align-items: center;
+        @include align-items(center);
     }
     .speaker {
         width: 370px;
         height: 150px;
         border-radius: 35px;
-        text-align: center; 
+        text-align: center;
         padding: 20px 10px;
         margin-bottom: 20px;
         h3 {
@@ -446,8 +448,8 @@ nav li a {
     nav {
         margin-bottom: 20px;
         ul{
-            display: flex;
-            justify-content: space-around;
+            @include display(flex);
+            @include justify-content(space-around);
         }
 
         li {
@@ -469,43 +471,43 @@ nav li a {
     padding: 10px;
     margin-bottom: 20px;
     background-color: $highlight;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include display(flex);
+    @include justify-content(space-around);
+    @include align-items(center);
 
     aside {
-        flex: 20%;
+        @include flex(20%);
         margin: 0;
         margin-right: 10px;
     }
 
     section {
-        flex: 40%;
+        @include flex(40%);
         margin: 0;
     }
 }
 
 /* Flexbox Grid System  */
 .grid {
-    display: flex;
-    flex-wrap: wrap;
+    @include display(flex);
+    @include flex-wrap(wrap);
     list-style: none;
     margin: 0;
     padding: 0;
     & > section {
-        flex: 50%;
+        @include flex(50%);
         padding: 20px;
     }
     & > .grid-1of4 {
-        flex: 23%;
+        @include flex(23%);
     }
     & > .grid-3of4 {
-        flex: 73%;
+        @include flex(73%);
     }
     & > .grid-1of2 {
-        flex: 48%;
+        @include flex(48%);
     }
     & > .grid-1of3 {
-        flex: 32%;
+        @include flex(32%);
     }
 }
