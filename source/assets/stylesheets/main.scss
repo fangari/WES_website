@@ -76,7 +76,20 @@ main {
 }
 
 footer {
+    max-width: 1280px;
+    margin: 0 auto;
     text-align: center;
+    .colombia-flag-bar {
+        width: 100%;
+        margin: 0 auto;
+        height: 3px;
+        &:before {
+            height: 3px;
+        }
+        &:after {
+            height: 3px;
+        }
+    }
 }
 
 header {
@@ -135,6 +148,7 @@ nav li a {
         text-align: left;
         background: rgba(0, 0, 0, 0.7);
         width: 300px;
+        margin: 0;
     }
 }
 
@@ -159,9 +173,6 @@ nav li a {
     }
 }
 
-.centered {
-    margin: 0 auto;
-}
 
 .logos-container, .navigation {
     @include flex(1);
@@ -279,34 +290,30 @@ nav li a {
     }
 }
 
-.contact {
+.contacts {
     @include justify-content(center);
-    @include flex-flow(column);
-    text-align: center;
+    font-size:  0.9em;
+    line-height: 1;
+    margin-bottom: 0;
+}
 
-    footer {
-        height: 70px;
-        background: no-repeat center/cover url(image-path("bottom_bg.png"));
-    }
+.details {
+    text-align: right;
+    font-weight: bold;
+    margin: 10px 30px 0 0;
+}
 
-    h1, .details {
-        font-weight: bold;
-        margin-top: 10px;
-        font-size: 1.3em;
+.aditional-contacts {
+    @include align-self(center);
+    margin: 0 0 0 30px;
+    li {
+        margin-bottom: 20px;
+        text-align: right;
     }
+}
 
-    .aditional-contacts {
-        @include align-self(center);
-        li {
-            margin-bottom: 40px;
-            text-align: right;
-            font-size: 1.3em;
-        }
-    }
-
-    .device-logo {
-        margin: 0 10px;
-    }
+.device-logo {
+    margin: 0 10px;
 }
 
 .sponsors, .organizers {
@@ -314,7 +321,7 @@ nav li a {
     background-color: $white;
     li {
         display: inline-block;
-        margin: 5px;
+        margin: 5px 20px;
         @include align-self(center);
     }
     &.container {
@@ -348,7 +355,7 @@ nav li a {
 }
 
 .right-separator {
-    border-right: 5px solid $white;
+    border-right: 2px solid $white;
 }
 
 .form {
