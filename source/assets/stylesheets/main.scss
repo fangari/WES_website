@@ -275,6 +275,8 @@ nav li a {
         @include flex(25%);
         @include order(2);
         @include align-self(center);
+        max-width: 20em;
+        min-width: 10em;
         margin: 0 10px;
         h1 {
             text-align: center;
@@ -292,12 +294,16 @@ nav li a {
         @include flex(34%);
         @include order(1);
         margin: 0 10px;
+        max-width: 30em;
+        min-width: 15em;
     }
 
     .right-reasons {
         @include flex(34%);
         @include order(3);
         margin: 0 10px;
+        max-width: 30em;
+        min-width: 15em;
     }
 }
 
