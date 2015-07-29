@@ -24,7 +24,23 @@ en:
     emerald business"
 
   # Simposio
-  queries: "Queries"
+  project_description_title: "Project Description"
+  project_description: |
+    <p>The <strong>1<sup>st</sup> International Emerald Symposium 2015</strong>,
+    is the business platform where international industry players  will exchange
+    knowledge and information.</p>
+    <p>Producing countries, gemological laboratories, wholesale companies, big
+    brands, government, and international coloured-gemstone associations will
+    converge in one venue to share the state of the art, and to consolidate
+    promotion, production, enhancement, and other emerald-related policies.</p>
+    <p>Thus, the <strong>1<sup>st</sup> International Emerald Symposium</strong>
+    becomes the ideal stage to gain knowledge and to exchange experiences with
+    the leading professionals in the field.</p>
+  why_title: "Why a Symposium"
+  why_project: >
+    Because the goal is to actively integrate participants by sharing knowledge and
+    exchanging ideas to be at the forefront of the business.
+
 
   # Agenda
   tracks: "Symposium Tracks"

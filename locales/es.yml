@@ -23,7 +23,27 @@ es:
   tagline: "Ven y construye junto a grandes expertos, soluciones para el futuro del negocio de las esmeraldas"
 
   # Simposio
-  queries: "Consultas"
+  project_description_title: "Descripción del proyecto"
+  project_description: |
+    <p>El <strong>1<sup>er</sup> Simposio Internacional de la Esmeralda
+    2015</strong>, es la plataforma de negocios donde los protagonistas de la
+    industria realizan un intercambio de informaci&oacute;n sectorial a nivel
+    internacional.</p>
+    <p>All&iacute; confluir&aacute;n los principales pa&iacute;ses productores
+    de esmeraldas, laboratorios de certificaci&oacute;n, empresas comercializadoras,
+    grandes marcas, sector gobierno y asociaciones internacionales relacionadas
+    con las piedras de color, de tal forma que se comparta el estado del arte y
+    se consoliden las pol&iacute;ticas de promoci&oacute;n, embellecimiento,
+    desarrollo y dem&aacute;s temas inherentes a la industria mundial de la
+    esmeralda.</p>
+    <p>As&iacute;, el <strong>1<sup>er</sup> Simposio Internacional de la
+    Esmeralda 2015</strong> se convierte en el escenario ideal de
+    capacitaci&oacute;n y de intercambio de experiencias con los profesionales
+    m&aacute;s representativos del sector.</p>
+  why_title: "&iquest;Por qu&eacute; un simposio&quest;"
+  why_project: >
+    Porque se busca una participaci&oacute;n activa de los participantes, aportando conocimiento
+    e intercambiando ideas para estar a la vanguardia en el sector.
 
   # Agenda
   tracks: "Ejes Temáticos"
