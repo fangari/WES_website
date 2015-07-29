@@ -65,7 +65,7 @@ Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
-    background: radial-gradient(ellipse farthest-corner, rgba(0,0,0,0), rgba(0,0,0,0.6)), image-url("speckled-noise.svg"), gray;
+    background: radial-gradient(ellipse farthest-corner, rgba(0,0,0,0), rgba(0,0,0,0.6)), image-url("rock-texture.svg"), gray;
 }
 
 main {
@@ -218,70 +218,64 @@ nav li a {
 }
 
 .mission-statement {
-    order: 1;
-    display: flex;
 
-    & > aside {
-        flex: 40%;
-        order: 1;
+    aside {
+        flex: 38%;
         align-self: center;
         text-align: center;
+        margin: 0px 18px 20px 0;
     }
 
-    & > article {
+    article {
         flex: 60%;
-        order: 2;
     }
 
     h2 {
         font-size: 3em;
+        margin-bottom: 0.5em;
     }
 
     p {
         padding: 20px;
+        font-size: 1.3em;
+        line-height: 1.5;
     }
 
     p.highlight {
-        margin-bottom: 30px;
-    }
-    .right {
-        display: block;
-        float: right;
+        margin-bottom: 1.5em;
     }
 }
 
 .why-attend {
-    order: 2;
-    display: flex;
     margin-top: 50px;
 
     .title {
-        flex: 30%;
+        flex: 25%;
         order: 2;
         align-self: center;
+        margin: 0 8px;
         h1 {
             text-align: center;
             font-size: 3em;
-        }
-        img {
-
         }
     }
 
     li {
         margin-bottom: 35px;
+        font-size: 1.3em;
+        line-height: 1.5;
     }
 
     .left-reasons {
         flex: 35%;
         order: 1;
-        padding-right: 10px;
+        margin: 0 10px;
     }
 
     .right-reasons {
         flex: 35%;
         order: 3;
-        padding-left: 10px;
+        margin: 0 10px;
     }
 }
 

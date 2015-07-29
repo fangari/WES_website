@@ -1,0 +1,73 @@
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="280"
+   height="280"
+   id="svg44525"
+   version="1.1">
+  <defs
+     id="defs45178">
+    <filter
+       id="n"
+       style="color-interpolation-filters:sRGB;"
+       y="0"
+       x="0">
+      <feTurbulence
+         id="feTurbulence45881"
+         result="result4"
+         seed="0"
+         stitchType="stitch"
+         numOctaves="5"
+         baseFrequency="0.04"
+         type="fractalNoise" />
+      <feDisplacementMap
+         id="feDisplacementMap45883"
+         result="result3"
+         scale="10"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         in2="result4"
+         in="SourceGraphic" />
+      <feDiffuseLighting
+         id="feDiffuseLighting45885"
+         in="result4"
+         result="result1"
+         surfaceScale="2"
+         diffuseConstant="1"
+         lighting-color="rgb(233,230,215)">
+        <feDistantLight
+           id="feDistantLight45887"
+           elevation="40"
+           azimuth="235" />
+      </feDiffuseLighting>
+      <feComposite
+         id="feComposite45889"
+         result="result2"
+         in2="result1"
+         in="result3"
+         operator="in" />
+      <feComposite
+         id="feComposite45891"
+         k1="1.7"
+         operator="arithmetic"
+         result="result5"
+         in2="result1" />
+      <feBlend
+         id="feBlend45893"
+         mode="normal"
+         in2="result3"
+         in="result5" />
+    </filter>
+  </defs>
+  <rect
+     y="-10"
+     x="-10"
+     height="320"
+     width="320"
+     id="rect45734"
+     filter="url(#n)"
+     style="opacity:0.8;fill:#666;fill-opacity:0.35" />
+</svg>
