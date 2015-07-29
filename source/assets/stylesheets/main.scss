@@ -347,12 +347,19 @@ nav li a {
 }
 
 .form-gateway {
+    h1 {
+        font-size: 2em;
+    }
     @include flex(50%);
     text-align: center;
+    max-width: 50%;
     button {
         display: block;
+        border: 3px solid $white;
         margin: 20px auto;
-        width: 200px;
+        font-size: 1.8em;
+        padding: 50px;
+        width: 70%;
         background-color: $active-translucid;
         &:hover, &:focus {
             background-color: lighten($active-translucid, 15%);
