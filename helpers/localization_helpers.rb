@@ -15,10 +15,27 @@ module LocalizationHelpers
 
   def nav_link_to(link, url, options = {})
     if current_resource.url == (url_for(local_path(url)) + '/')
-      options.merge!(class: 'active') do |_key, oldval, newval| 
-        oldval +" "+ newval
-      end
+      options.merge!(class: 'active') { |_key, oldval, newval| "#{oldval} #{newval}" }
     end
     localized_link_to(link, url, options)
   end
+
+  def translated_url(locale)
+    # Assuming /:locale/page.html
+    page_name = @page_id.split('/', 2).last.sub(/\..*$/, '')
+    untranslated_path = t(:paths).key(page_name)
+
+    begin
+      translated = I18n.translate!("paths.#{untranslated_path}", locale: locale)
+    rescue I18n::MissingTranslationData
+      translated = untranslated_path
+    end
+
+    "/#{locale}/#{translated}"
+  end
+
+  def other_langs
+    langs - [I18n.locale]
+  end
+
 end

@@ -1,0 +1,265 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg3032"
+   height="653.40875"
+   width="653.40869">
+  <defs
+     id="defs3034">
+    <path
+       style="fill:#ffffff"
+       d="m 0,-1 0.58779,1.80902 -1.53885,-1.11804 1.90212,0 -1.53885,1.11804 z"
+       transform="scale(0.0308,0.0308)"
+       id="s" />
+    <g
+       id="s17">
+      <g
+         id="s8">
+        <use
+           height="100%"
+           width="100%"
+           id="use3039"
+           y="0.1345"
+           x="0.084399998"
+           xlink:href="#s" />
+        <use
+           height="100%"
+           width="100%"
+           id="use3041"
+           y="0.1345"
+           x="0.1688"
+           xlink:href="#s" />
+        <use
+           height="100%"
+           width="100%"
+           id="use3043"
+           y="0.1345"
+           x="0.25319999"
+           xlink:href="#s" />
+        <use
+           height="100%"
+           width="100%"
+           id="use3045"
+           y="0.1345"
+           x="0.33759999"
+           xlink:href="#s" />
+        <use
+           height="100%"
+           width="100%"
+           id="use3047"
+           y="0.1345"
+           x="0.42199999"
+           xlink:href="#s" />
+        <use
+           height="100%"
+           width="100%"
+           id="use3049"
+           y="0.1345"
+           x="0.50639999"
+           xlink:href="#s" />
+        <use
+           height="100%"
+           width="100%"
+           id="use3051"
+           y="0.1345"
+           x="0.59079999"
+           xlink:href="#s" />
+        <use
+           height="100%"
+           width="100%"
+           id="use3053"
+           y="0.1345"
+           x="0.67519999"
+           xlink:href="#s" />
+      </g>
+      <g
+         id="s9">
+        <use
+           height="100%"
+           width="100%"
+           id="use3056"
+           y="-0.089699998"
+           x="0.042199999"
+           xlink:href="#s8" />
+        <use
+           height="100%"
+           width="100%"
+           id="use3058"
+           y="0.044799998"
+           x="0.042199999"
+           xlink:href="#s" />
+      </g>
+    </g>
+    <g
+       id="u">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use3061"
+         xlink:href="#s17" />
+      <use
+         height="100%"
+         width="100%"
+         x="0"
+         id="use3063"
+         y="0.1794"
+         xlink:href="#s17" />
+      <use
+         height="100%"
+         width="100%"
+         x="0"
+         id="use3065"
+         y="0.35879999"
+         xlink:href="#s17" />
+    </g>
+    <g
+       id="u-7">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#s14"
+         id="use3147" />
+      <use
+         height="100%"
+         width="100%"
+         x="0"
+         xlink:href="#s14"
+         y="0.142"
+         id="use3149" />
+      <use
+         height="100%"
+         width="100%"
+         x="0"
+         xlink:href="#s14"
+         y="0.28400001"
+         id="use3151" />
+      <use
+         height="100%"
+         width="100%"
+         x="0"
+         xlink:href="#s7"
+         y="0.426"
+         id="use3153" />
+    </g>
+    <g
+       id="s14">
+      <g
+         id="s7">
+        <use
+           height="100%"
+           width="100%"
+           xlink:href="#s-1"
+           x="0.054000001"
+           y="0.056000002"
+           id="use3130" />
+        <use
+           height="100%"
+           width="100%"
+           xlink:href="#s-1"
+           x="0.154"
+           y="0.056000002"
+           id="use3132" />
+        <use
+           height="100%"
+           width="100%"
+           xlink:href="#s-1"
+           x="0.25400001"
+           y="0.056000002"
+           id="use3134" />
+        <use
+           height="100%"
+           width="100%"
+           xlink:href="#s-1"
+           x="0.354"
+           y="0.056000002"
+           id="use3136" />
+        <use
+           height="100%"
+           width="100%"
+           xlink:href="#s-1"
+           x="0.454"
+           y="0.056000002"
+           id="use3138" />
+        <use
+           height="100%"
+           width="100%"
+           xlink:href="#s-1"
+           x="0.55400002"
+           y="0.056000002"
+           id="use3140" />
+        <use
+           height="100%"
+           width="100%"
+           xlink:href="#s-1"
+           x="0.65399998"
+           y="0.056000002"
+           id="use3142" />
+      </g>
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#s7"
+         x="0.050000001"
+         y="0.071000002"
+         id="use3144" />
+    </g>
+    <path
+       style="fill:#ffffff"
+       id="s-1"
+       transform="scale(0.0308,0.0308)"
+       d="m 0,-1 0.58779,1.80902 -1.53885,-1.11804 1.90212,0 -1.53885,1.11804 z" />
+    <clipPath
+       id="clipPath4176"
+       clipPathUnits="userSpaceOnUse">
+      <circle
+         r="324.48001"
+         cy="325"
+         cx="491"
+         id="circle4178"
+         style="opacity:0.8;fill:#808080;fill-opacity:0.50196078;stroke:#000000;stroke-width:1.03998888;stroke-opacity:1" />
+    </clipPath>
+  </defs>
+  <g
+     transform="translate(-166.51999,3.9287415)"
+     clip-path="url(#clipPath4176)"
+     id="g3193">
+    <rect
+       style="fill:#b22234"
+       y="0"
+       x="0"
+       width="1235"
+       height="650"
+       id="rect3067" />
+    <path
+       style="stroke:#ffffff;stroke-width:50"
+       d="m 0,75 1235,0 M 0,175 1235,175 M 0,275 1235,275 M 0,375 1235,375 M 0,475 1235,475 M 0,575 l 1235,0"
+       id="path3069" />
+    <rect
+       style="fill:#3c3b6e"
+       y="0"
+       x="0"
+       width="494"
+       height="350"
+       id="rect3071" />
+    <use
+       height="1"
+       width="1"
+       y="0"
+       x="0"
+       xlink:href="#u-7"
+       transform="matrix(650,0,0,650,0.65000442,2.061709)"
+       id="use3161" />
+  </g>
+  <ellipse
+     ry="324.20438"
+     rx="324.20435"
+     cy="328.70438"
+     cx="326.70435"
+     id="path4180"
+     style="opacity:1;fill:none;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+</svg>

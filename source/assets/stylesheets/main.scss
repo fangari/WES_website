@@ -108,6 +108,11 @@ section {
     padding: 20px;
 }
 
+.language-change {
+    text-align: right;
+    margin: 10px 50px 0 0;
+}
+
 .logo {
     @include flex(25%);
     @include order(1);

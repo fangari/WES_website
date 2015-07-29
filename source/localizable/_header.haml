@@ -1,19 +1,26 @@
 / Header
-%header.container
-  .logo
-    %img{src: "/assets/images/wht_logo_#{I18n.locale.to_s}.png"}
-  %nav
-    %ul
-      -# %li
-      -#   = nav_link_to 'home', 'home', class: "speech-bubble mid-bottom right-triangle"
-      %li
-        = nav_link_to 'symposium', 'symposium', class: "speech-bubble mid-bottom right-triangle"
-      %li
-        = nav_link_to 'schedule', 'schedule', class: "speech-bubble mid-bottom right-triangle"
-      %li
-        = nav_link_to 'registration', 'registration', class: "speech-bubble mid-bottom right-triangle"
-      -# %li
-      -#   = nav_link_to 'recommended', 'recommended-hotels', class: "speech-bubble mid-bottom right-triangle"
-      -# %li
-        -# = nav_link_to 'contact', 'contact', class: "speech-bubble mid-bottom right-triangle"
+%header
+  %section.language-change
+    - other_langs.each do |locale|
+      = link_to "#{translated_url(locale)}" do
+        = image_tag("#{locale}_flag.svg", width: "35px")
+        &nbsp;
+        = t(:language)
+  %section.container
+    .logo
+      %img{src: "/assets/images/wht_logo_#{I18n.locale.to_s}.png"}
+    %nav
+      %ul
+        -# %li
+        -#   = nav_link_to 'home', 'home', class: "speech-bubble mid-bottom right-triangle"
+        %li
+          = nav_link_to 'symposium', 'symposium', class: "speech-bubble mid-bottom right-triangle"
+        %li
+          = nav_link_to 'schedule', 'schedule', class: "speech-bubble mid-bottom right-triangle"
+        %li
+          = nav_link_to 'registration', 'registration', class: "speech-bubble mid-bottom right-triangle"
+        -# %li
+        -#   = nav_link_to 'recommended', 'recommended-hotels', class: "speech-bubble mid-bottom right-triangle"
+        -# %li
+          -# = nav_link_to 'contact', 'contact', class: "speech-bubble mid-bottom right-triangle"
 
