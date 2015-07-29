@@ -59,3 +59,7 @@ es:
   result: "Parece ser que esto es el resultado de: "
   wrong_address: "una direcci&oacuten web mal escrita"
   bad_link: "un enlace desactualizado"
+
+  # Thank you page
+  thank_you: "Muchas Gracias"
+  registration_instructions: "En un momento recibir&aacute; en su correo electr&oacute;nico, las instrucciones para confirmar su asistencia al evento.

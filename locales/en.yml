@@ -61,3 +61,7 @@ en:
   result: "It looks like this was the result of either: "
   wrong_address: "a mistyped address"
   bad_link: "an out-of-date link"
+
+  # Thank you page
+  thank_you: "Thank you"
+  registration_instructions: "In a moment you will receive an email with the instructions to complete your registration to the symposium."
