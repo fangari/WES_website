@@ -69,14 +69,14 @@ body {
 }
 
 main {
-    max-width: 1280px;
+    max-width: $max-page-width;
     min-height: 60vh;
     padding: 20px;
     margin: auto;
 }
 
 footer {
-    max-width: 1280px;
+    max-width: $max-page-width;
     margin: 0 auto;
     text-align: center;
     .colombia-flag-bar {
@@ -93,8 +93,12 @@ footer {
 }
 
 header {
-    max-width: 1280px;
+    max-width: $max-page-width;
     margin: auto;
+    .container {
+        padding: 0 20px 0;
+        margin-bottom: 0;
+    }
 }
 
 section {
