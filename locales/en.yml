@@ -2,7 +2,6 @@ en:
   title: "1st International Emerald Symposium"
   paths:
     home: ""
-    symposium: "symposium"
     schedule: "schedule"
     registration: "registration"
     citizen-registration: "citizen-registration"
@@ -15,7 +14,6 @@ en:
   # Header
   language: "Espa&ntilde;ol"
   home: "Home"
-  symposium: "Symposium"
   registration: "Registration"
   schedule: "Program"
   activities: "Additional Activities"
@@ -57,14 +55,9 @@ en:
   register: "Register"
   download_form: "Download Form"
 
-  # Hotels
-  hotels_title: "HOTELS"
-  plans_title: "TOURS"
-  hotel_warning: "These recommended hotels are the closest to the symposium venue.
-    (Sheraton Hotel Bogot&aacute;)"
-  more_options: "If you wish to look into other options we recommend that you look for hotels
-    along Calle 26"
+  # Venue
   hosting: "Symposium venue"
+  for_reservations: "For reservations and more information:"
 
   # Contact
   sponsored: "Organized by"

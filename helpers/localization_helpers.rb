@@ -22,7 +22,9 @@ module LocalizationHelpers
 
   def translated_url(locale)
     # Assuming /:locale/page.html
+    return "/#{locale}/" if @page_id.nil?
     page_name = @page_id.split('/', 2).last.sub(/\..*$/, '')
+    return  "/#{locale}/" if page_name.eql?('index')
     untranslated_path = t(:paths).key(page_name)
 
     begin

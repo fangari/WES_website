@@ -2,7 +2,7 @@ es:
   title: "1er Simposio Internacional de Esmeraldas"
   paths:
     home: ""
-    symposium: "simposio"
+    # index: "index"
     schedule: "agenda"
     registration: "registro"
     citizen-registration: "registro-ciudadanos"
@@ -15,7 +15,6 @@ es:
   # Header
   language: "English"
   home: "Inicio"
-  symposium: "Simposio"
   registration: "Registro"
   schedule: "Agenda"
   activities: "Actividades Complementarias"
@@ -60,13 +59,9 @@ es:
   register: "Registrarse"
   download_form: "Descargar Formulario"
 
-  # Hotels
-  hotels_title: "HOTELES"
-  plans_title: "PLANES"
-  hotel_warning: "Esta recomendaci&oacute;n de hoteles se realiz&oacute; con base en la
-    cercan&iacute;a con el lugar del evento (Hotel Sheraton Bogotá)"
-  more_options: "Si desea ver m&aacute;s opciones de hoteles le recomendamos buscar por la Calle 26"
+  # Venue
   hosting: "Lugar del simposio"
+  for_reservations: "Para mayor informaci&oacute;n y reservas:"
 
   # Contact
   sponsored: "Organiza"
