@@ -116,13 +116,11 @@ section {
 .logo {
     @include flex(25%);
     @include order(1);
-    padding-top: 10px;
-    padding-left: 10px;
     align-self: center;
     max-width: 300px;
+    min-width: 250px;
     text-align: center;
     margin-bottom: 25px;
-    margin-right: 20px;
 }
 
 nav {
@@ -135,12 +133,16 @@ nav {
 
 nav li {
     display: inline-block;
-    margin-bottom: 25px;
+    margin: 0 0px 25px;
+    vertical-align: middle;
+    line-height: 1.2;
+    font-size: 0.8em
 }
 
 nav li a {
     font-weight: bold;
     text-transform: uppercase;
+    @include word-wrap(normal);
 }
 
 .landing-container {
@@ -276,7 +278,7 @@ nav li a {
         @include order(2);
         @include align-self(center);
         max-width: 20em;
-        min-width: 10em;
+        min-width: 15em;
         margin: 0 10px;
         h1 {
             text-align: center;
@@ -286,8 +288,9 @@ nav li a {
 
     li {
         margin-bottom: 35px;
-        font-size: 1.3em;
-        line-height: 1.5;
+        font-size: 1.1em;
+        line-height: 1.4;
+        text-align: left;
     }
 
     .left-reasons {

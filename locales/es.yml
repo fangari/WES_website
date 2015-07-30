@@ -7,10 +7,10 @@ es:
     registration: "registro"
     citizen-registration: "registro-ciudadanos"
     non-citizen-registration: "registro-no-ciudadanos"
-    recommended-hotels: "hoteles-recomendados"
-    recommended-plans: "planes-recomendados"
-    contact: "contacto"
-    queries: "consultas"
+    activities: "actividades-complementarias"
+    information: "informacion-complementaria"
+    venue: "localizacion"
+    thank-you: "gracias-por-inscribirse"
 
   # Header
   language: "English"
@@ -18,8 +18,9 @@ es:
   symposium: "Simposio"
   registration: "Registro"
   schedule: "Agenda"
-  recommended: "Recomendados"
-  contact: "Contacto"
+  activities: "Actividades Complementarias"
+  information: "Informaci&oacute;n Complementaria"
+  venue: "Localizaci&oacute;n"
 
   tagline: "Ven y construye junto a grandes expertos, soluciones para el futuro del negocio de las esmeraldas"
 

@@ -7,10 +7,10 @@ en:
     registration: "registration"
     citizen-registration: "citizen-registration"
     non-citizen-registration: "non-citizen-registration"
-    recommended-hotels: "recommended-hotels"
-    recommended-plans: "recommended-plans"
-    contact: "contact"
-    queries: "queries"
+    activities: "additional-activities"
+    information: "additional-information"
+    venue: "venue"
+    thank-you: "registration-thank-you"
 
   # Header
   language: "Espa&ntilde;ol"
@@ -18,8 +18,9 @@ en:
   symposium: "Symposium"
   registration: "Registration"
   schedule: "Program"
-  recommended: "Recommended"
-  contact: "Contact"
+  activities: "Additional Activities"
+  information: "Additional Information"
+  venue: "Venue"
 
   tagline: "Come and build alongside leading experts, solutions for the future of the
     emerald business"

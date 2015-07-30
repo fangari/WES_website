@@ -1,51 +1,40 @@
 .speech-bubble {
   position: relative;
   text-align: center;
-  padding: 10px 5px;
+  padding: 10px 15px;
   background-color: $base-bubble;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  color: $dark-gray;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 8px #000;
-  -moz-box-shadow: 2px 2px 8px #000;
   box-shadow: 2px 2px 8px #000;
 }
 
 a.speech-bubble {
   display: block;
   color: #333;
-  width: 130px;
-  padding: 10px 10px;
-  margin-left: 5px;
+  width: 140px;
+  height: 50px;
+  padding: 10px 5px;
   &.active {
     color: $white;
   }
 }
 
-nav .speech-bubble {
-  width: 130px;
-  font-size: 0.8em;
-  a {
-    color: #333;
-  }
-}
-
-.navigation .speech-bubble {
-  width: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 15px;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+// nav .speech-bubble {
+//   width: 130px;
+//   font-size: 0.8em;
+//   a {
+//     color: #333;
+//   }
+// }
 
 .active {
   background-color: $active-bubble;
+  color: $white;
 }
 
 .highlight {
   background-color: $highlight;
+  color: $white;
 }
 
 .speech-bubble:before {
@@ -82,49 +71,50 @@ nav .speech-bubble {
 }
 
 .right-triangle:before {
-  border-color: $base-bubble $base-bubble transparent transparent;
+  @include triangle(10px 10px, $base-bubble $base-bubble, up-left);
 }
 
 .active.right-triangle:before {
-  border-color: $active-bubble $active-bubble transparent transparent;
+  @include triangle(10px 10px, $active-bubble $active-bubble, up-left);
 }
 
 .highlight.right-triangle:before {
-  border-color: $highlight $highlight transparent transparent;
+  @include triangle(10px 10px, $highlight $highlight, up-left);
 }
 
 .left-triangle:before {
-  border-color: $base-bubble transparent transparent $base-bubble;
+  @include triangle(10px 10px, $base-bubble $base-bubble, up-right);
 }
 
 .active.left-triangle:before {
-  border-color: $active-bubble transparent transparent $active-bubble;
+  @include triangle(10px 10px, $active-bubble $active-bubble, up-right);
 }
 
 .highlight.left-triangle:before {
-  border-color: $highlight transparent transparent $highlight;
+  @include triangle(10px 10px, $highlight $highlight, up-right);
 }
 
 .mid-left-triangle:before {
-  border-color: transparent $base-bubble transparent transparent;
+  @include triangle(10px, $base-bubble, left);
 }
 
 .active.mid-left-triangle:before {
-  border-color: transparent $active-bubble transparent transparent;
+  @include triangle(10px, $active-bubble, left);
 }
 
 .mid-right-triangle:before {
-  border-color: transparent transparent transparent $base-bubble;
+  @include triangle(10px, $base-bubble, right);
 }
 
 .active.mid-right-triangle:before {
-  border-color: transparent transparent transparent $active-bubble;
+  @include triangle(10px, $highlight, right);
 }
 
 .tracks, .speakers {
   .speech-bubble {
     border: 2px solid white;
     background-color: $base-translucid;
+    color: $white;
   }
 
   .active {
