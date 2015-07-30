@@ -145,20 +145,6 @@ nav li a {
     @include word-wrap(normal);
 }
 
-.landing-container {
-    background: no-repeat center/cover url(image-path("canocristales.jpg"));
-    @include display(flex);
-    @include flex-direction(column);
-    @include justify-content(center);
-    min-height: 100vh;
-    & footer {
-        text-align: left;
-        background: rgba(0, 0, 0, 0.7);
-        width: 300px;
-        margin: 0;
-    }
-}
-
 .colombia-flag-bar {
     margin: 0 0;
     height: 6px;
@@ -180,64 +166,49 @@ nav li a {
     }
 }
 
-
-.logos-container, .navigation {
-    @include flex(1);
-}
-
-.logos-container {
-    @include display(flex);
-    @include justify-content(space-around);
-    margin-top: 50px;
-}
-
 .tagline {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: hsla(182,96,16,0.8);
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: bold;
     text-align: center;
-    background: hsla(182, 96, 16, 0.8);
-    padding: 10px 50px;
-    @include flex(20%);
-}
-
-.tagline h1 {
-    font-size: 45px;
-    font-weight: 700;
+    font-size: 200%;
     margin: 0;
-
 }
 
-.upper-half {
-    @include display(flex);
-    @include justify-content(center);
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-bottom: 40px;
-    a {
-        margin: 0 1.5em;
-    }
+.hero-slider {
+    margin: 0 auto 50px auto;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
 }
 
-.lower-half {
-    @include display(flex);
-    @include justify-content(center);
+.photo {
+    position: absolute;
+    animation: round 16s infinite;
+    opacity: 0;
 }
 
-.left-menu {
-    margin-right: 20px;
-    a {
-        margin-bottom: 40px;
-    }
+@include keyframes(round){
+    25%{ opacity:1; }
+    40%{ opacity:0; }
 }
 
-.right-menu {
-    margin-left: 20px;
-    a {
-        margin-bottom: 40px;
-    }
-}
+img:nth-child(4){ animation-delay:0s; }
+img:nth-child(3){ animation-delay:4s; }
+img:nth-child(2){ animation-delay:8s; }
+img:nth-child(1){ animation-delay:12s; }
 
 .mission-statement {
     @include flex-wrap(wrap-reverse);
-    padding: 0 20px;
+    background: no-repeat top/100% image-url("line_separator.png");
+    padding: 10px 20px 0;
     aside {
         @include flex(38%);
         @include align-self(center);
@@ -271,8 +242,9 @@ nav li a {
 }
 
 .why-attend {
-    margin-top: 50px;
-
+    margin-top: 40px;
+    background: no-repeat top/100% image-url("line_separator.png");
+    padding-top: 30px;
     .title {
         @include flex(25%);
         @include order(2);
