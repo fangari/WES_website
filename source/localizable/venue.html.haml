@@ -1,0 +1,35 @@
+---
+title: "1st International Emerald Symposium"
+layout: layout
+---
+%main
+  .hotel.container
+    %aside
+      = image_tag "sheraton_bogota.jpg", width: "200"
+      %section.hotel-info
+        %p= t(:hosting)
+        %h1 Hotel Sheraton Bogot&aacute;
+        %p
+          Calle 25 B No 69 C 80
+          %br
+          Tel. (571) 210 5000
+        = link_to "www.sheratonbogota.com", "http://sheratonbogota.com"
+    %section.map
+      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.633277627981!2d-74.10858600000002!3d4.659309000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b9a5453d1d7%3A0x25ee1afe982a3671!2sHotel+Sheraton+Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1438218119913", :style => "border:3px solid black", width: "450"}
+    %section.contacts
+      %ul
+        %li
+          %h2= t(:for_reservations)
+        %li
+          %h2 Martha Aponte
+          %span.device-logo= image_tag("mobile-icon.svg", width: "15")
+          (+57) 310 688 2233
+          %br
+          marthaapontepaez@yahoo.es
+        %li
+          %h2 Marcela Pardo
+          %span.device-logo= image_tag("mobile-icon.svg", width: "15")
+          (+57) 315 895 2259
+          %br
+          mapa2214@yahoo.es
+
