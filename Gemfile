@@ -12,6 +12,9 @@ gem 'middleman-deploy'
 gem 'middleman-autoprefixer'
 gem 'middleman-search_engine_sitemap'
 
+gem 'middleman-pry'
+gem 'rake'
+
 # Styling Gems
 gem 'bitters', '~> 1.0.0'
 gem 'bourbon', '~> 4.2.3'
