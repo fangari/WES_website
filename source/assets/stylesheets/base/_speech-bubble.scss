@@ -37,6 +37,10 @@ a.speech-bubble {
   color: $white;
 }
 
+.translucent-back {
+  background-color: $form-background;
+}
+
 .speech-bubble:before {
   content: ' ';
   position: absolute;
