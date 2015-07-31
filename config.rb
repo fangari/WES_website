@@ -57,6 +57,7 @@ when 'production'
 else
   activate :deploy do |deploy|
     deploy.method       = :ftp
+    deploy.build_before = true
     deploy.host         = 'ftp.worldemeraldsymposium.com'
     deploy.port         = 21
     deploy.path         = 'public_html/staging'
