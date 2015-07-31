@@ -4,13 +4,13 @@
     = partial "contacts"
   %section.organizers.container
     %ul
-      %li= image_tag "fedesmeraldas_logo.png"
-      %li= image_tag "acodes_logo.png"
+      %li= link_to(image_tag("fedesmeraldas_logo.png"), "http://www.fedesmeraldas.com.co")
+      %li= link_to(image_tag("acodes_logo.png"), "http://www.acodes.org")
       %li= image_tag "asocoesmeral_logo.png"
       %li= image_tag "aprecol_logo.png"
-      %li= image_tag "anm_logo.png"
-      %li= image_tag "minminas_logo.png"
-      %li= image_tag "sena_logo.png"
+      %li= link_to(image_tag("anm_logo.png"), "http://www.anm.gov.co")
+      %li= link_to(image_tag("minminas_logo.png"), "http://www.minminas.gov.co")
+      %li= link_to(image_tag("sena_logo.png"), "http://www.sena.edu.co")
   %small
     Copyright &copy; 2015 - Fedesmeraldas - 1
     %sup= t(:super_first)
