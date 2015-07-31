@@ -548,6 +548,11 @@ img:nth-child(1){ animation-delay:12s; }
     }
 }
 
+.venue {
+    background: no-repeat 50% 95%/95% image-url("ciudad_fondo.png");
+    background-blend-mode: lighten;
+}
+
 /* Flexbox Grid System  */
 .grid {
     @include display(flex);
