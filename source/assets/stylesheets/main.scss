@@ -296,7 +296,7 @@ img:nth-child(1){ animation-delay:12s; }
 .hotel .contacts {
     flex: 100%;
     ul  {
-       margin: 2em 0 0.6em 0;
+        margin: 2em 0 0.6em 0;
         text-align: center;
         line-height: 1.5;
     }
@@ -397,8 +397,28 @@ img:nth-child(1){ animation-delay:12s; }
     }
     & > article {
         @include flex(70%);
-        background-color: $highlight;
+        background-color: $form-background;
         padding: 20px;
+        position: relative;
+        .limited-ribbon  {
+            position: absolute;
+            background: $active-bubble;
+            top: -46px;
+            right: -20px;
+            padding: 10px 20px;
+            text-align: left;
+            font-weight: 900;
+            text-transform: uppercase;
+            z-index: -1;
+        }
+        .limited-ribbon:before{
+            content: "";
+            border: 12px solid;
+            border-color: $highlight transparent transparent $highlight;
+            position: absolute;
+            top: 46px;
+            right: 0px;
+        }
     }
     label {
         display: block;
@@ -437,6 +457,7 @@ img:nth-child(1){ animation-delay:12s; }
     .datefield {
         width: 28%;
     }
+
 }
 
 .tracks, .speakers {
@@ -509,7 +530,7 @@ img:nth-child(1){ animation-delay:12s; }
     width: 90%;
     padding: 10px;
     margin: 0 auto 4em;
-    background-color: $highlight;
+    background-color: $form-background;
     @include display(flex);
     @include justify-content(space-around);
     @include align-items(center);
