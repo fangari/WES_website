@@ -14,9 +14,9 @@
     $modal-padding: 3em;
     $modal-background: $base-background-color;
     $modal-close-color: $light-gray;
-    $modal-image-height: 135px;
+    $modal-image-height: em(135);
     $modal-image-width: $modal-image-height;
-    $modal-trigger-image-width: 300px;
+    $modal-trigger-image-width: em(300);
 
     label {
         cursor: pointer;
@@ -36,10 +36,10 @@
     .modal-trigger {
         padding: 0.8em 1em;
         background-image: linear-gradient(180deg, $active-bubble 25%, darken($active-bubble, 14%));
-        margin: 10px 0;
+        margin: 2.5em auto 1em auto; 
         border-radius: 15px;
-        width: 300px;
-        height: 70px;
+        max-width: em(300);
+        min-height: em(70);
         text-align: center;
     }
 
@@ -53,9 +53,9 @@
         visibility: hidden;
         z-index: 99999999999;
 
-        // @include media($large-screen) {
-            //     padding-top: 10em;
-        // }
+        @include media($large-screen) {
+                padding-top: 10em;
+        }
 
         .modal-bg {
             @include position(absolute, 0);
@@ -102,15 +102,15 @@
         position: relative;
         width: 95%;
 
-        // @include media($medium-screen) {
-            //     max-height: 70%;
-            //     padding: $modal-padding;
-            //     width: 60%;
-        // }
+        @include media($medium-screen) {
+                max-height: 90%;
+                padding: $modal-padding/2;
+                width: 70%;
+        }
 
-        // @include media($large-screen) {
-            //     width: 50%;
-        // }
+        @include media($large-screen) {
+                width: 80%;
+        }
 
         h1 {
             color: hsl(0, 0, 90);
@@ -134,9 +134,9 @@
             background: $modal-background;
             padding: 20px;
 
-            // @include media($medium-screen) {
-                //     @include columns(2 8em);
-            // }
+            @include media($medium-screen) {
+                    @include columns(2 8em);
+            }
         }
 
         a.cta {

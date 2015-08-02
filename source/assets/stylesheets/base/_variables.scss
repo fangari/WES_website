@@ -1,5 +1,10 @@
 // Measurments
-$max-page-width: 1280px;
+$x-small-screen: em(320) !default;
+$small-screen: em(640) !default;
+$medium-screen: em(860) !default;
+$large-screen: em(1280) !default;
+$max-page-width: $large-screen;
+$min-page-width: $x-small-screen;
 
 // Typography
 $base-font-family: $helvetica;
@@ -40,7 +45,7 @@ $flag-red: hsl(0, 100, 40);
 // Font Colors
 $base-background-color: #fff;
 $base-font-color: $white;
-$action-color: $blue;
+$action-color: $active-bubble;
 
 // Border
 $base-border-color: $light-gray;
@@ -49,3 +54,20 @@ $base-border: 1px solid $base-border-color;
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Tables
+$tab-border-radius: 10px !default;
+$tab-border: 1px solid $base-border-color;
+$tab-content-background: $active-bubble;
+$tab-active-background: lighten($active-translucid, 15%);
+$tab-inactive-color: $highlight;
+$tab-inactive-hover-color: darken($light-gray, 5);
+$tab-mode: $medium-screen;
+$table-border-color: $highlight;
+$table-border: 1px solid $highlight;
+$table-background: lighten(hsla(171,17,68, 0.8), 12%);
+$table-header-background: lighten($table-background, 10%);
+$table-hover-background: darken($table-background, 5%);
+$table-stripe-background: darken($table-background, 2%);
+$table-stripe-background-hover: darken($table-stripe-background, 5%);
+$table-padding: 0.75em 1em;

@@ -14,7 +14,7 @@ layout: layout
     %form.grid{method: "post",
     action: "//worldemeraldsymposium.us10.list-manage.com/subscribe/post?u=c1a7d035395ac1cb5dbdc16e4&id=feee43f9e7",
     name: "mc-embedded-subscribe-form", novalidate: true}
-      %section.right-separator
+      %section.field-group.right-separator
         %label{for: "nombre"}Nombre
         .grid
           %select.grid-1of4{name: "TITULO"}
@@ -47,7 +47,7 @@ layout: layout
                 Otro
               %li
                 %input{type: "text", name: "OTROCAMPO", placeholder: "Especifique cuál"}
-        %div
+        %div.address-fields
           %label{for: "DIRECCION"}Direcci&oacute;n
           %input{type: "text", name: "DIRECCION[addr1]", placeholder: "Dirección 1 *", required: true}
           %input{type: "text", name: "DIRECCION[addr2]", placeholder: "Dirección 2 *"}
@@ -299,7 +299,7 @@ layout: layout
         %div
           %label{for: "EMAIL"}Correo Electr&oacute;nico *
           %input{type: "email", name: "EMAIL", required: true}
-      %section
+      %section.field-group
         %div
           %label{for: "NACIONALID"}Nacionalidad *
           %select{name: "NACIONALID", required: true}
@@ -606,7 +606,8 @@ layout: layout
         / real people should not fill this in and expect good things - do not remove this or risk form bot signups
         %div{:style => "position: absolute; left: -5000px;"}
           %input{:name => "b_c1a7d035395ac1cb5dbdc16e4_feee43f9e7", :tabindex => "-1", :type => "text", :value => ""}/
-        %button.submit-payment{name: "subscribe", type: "submit"} Continuar al pago
+        .center-text
+          %button.submit-payment{name: "subscribe", type: "submit"} Continuar al pago
       %footer
         %h1 El pago de la inscripci&oacute;n incluye
         %p

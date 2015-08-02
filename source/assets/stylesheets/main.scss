@@ -10,7 +10,7 @@
 html {
     color: $white;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.5;
     box-sizing: border-box;
 }
 
@@ -26,9 +26,9 @@ html {
 
 hr {
     display: block;
-    height: 1px;
+    height: em(1);
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: em(1) solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
@@ -64,67 +64,70 @@ Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
 ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: em(16) Helvetica, Helvetica Neue, Arial;
     background: radial-gradient(ellipse farthest-corner, rgba(0,0,0,0), rgba(0,0,0,0.6)), image-url("rock-texture.svg"), gray;
 }
 
 main {
     max-width: $max-page-width;
+    min-width: $min-page-width;
     min-height: 60vh;
-    padding: 20px;
+    padding: em(20);
     margin: auto;
 }
 
 footer {
     max-width: $max-page-width;
+    min-width: $min-page-width;
     margin: 0 auto;
     text-align: center;
     .colombia-flag-bar {
         width: 100%;
         margin: 0 auto;
-        height: 3px;
+        height: em(3);
         &:before {
-            height: 3px;
+            height: em(3);
         }
         &:after {
-            height: 3px;
+            height: em(3);
         }
     }
 }
 
 header {
     max-width: $max-page-width;
+    min-width: $min-page-width;
     margin: auto;
     .container {
-        padding: 0 20px 0;
+        padding: 0 em(20) 0;
         margin-bottom: 0;
     }
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: em(20);
 }
 
 .container {
     @include display(flex);
     @include justify-content(space-around);
     @include flex-flow(row wrap);
-    padding: 20px;
+    padding: em(20);
 }
 
 .language-change {
     text-align: right;
-    margin: 10px 50px 0 0;
+    margin: em(10) em(50) 0 0;
 }
 
 .logo {
     @include flex(25%);
     @include order(1);
     align-self: center;
-    max-width: 300px;
-    min-width: 250px;
+    max-width: em(300);
+    min-width: em(250);
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: em(25);
 }
 
 nav {
@@ -137,7 +140,7 @@ nav {
 
 nav li {
     display: inline-block;
-    margin: 0 0px 25px;
+    margin: 0 em(0) em(25);
     vertical-align: middle;
     line-height: 1.2;
     font-size: 0.8em
@@ -151,19 +154,19 @@ nav li a {
 
 .colombia-flag-bar {
     margin: 0 0;
-    height: 6px;
-    width: 300px;
+    height: em(6);
+    width: em(300);
     background-color: $flag-blue;
     &:before {
         content: "  ";
-        height: 6px;
+        height: em(6);
         float: left;
         width: 50%;
         background-color: $flag-yellow;
     }
     &:after {
         content: "  ";
-        height: 6px;
+        height: em(6);
         float: right;
         width: 25%;
         background-color: $flag-red;
@@ -178,7 +181,7 @@ nav li a {
     background-color: hsla(182,96,16,0.8);
     color: white;
     text-transform: uppercase;
-    padding: 20px;
+    padding: em(10);
     font-weight: bold;
     text-align: center;
     font-size: 200%;
@@ -186,7 +189,7 @@ nav li a {
 }
 
 .hero-slider {
-    margin: 0 auto 50px auto;
+    margin: 0 auto em(50) auto;
     width: 100%;
     height: 70vh;
     overflow: hidden;
@@ -212,14 +215,14 @@ img:nth-child(1){ animation-delay:12s; }
 .mission-statement {
     @include flex-wrap(wrap-reverse);
     background: no-repeat top/100% image-url("line_separator.png");
-    padding: 10px 20px 0;
+    padding: em(20) em(20) 0;
     aside {
         @include flex(38%);
         @include align-self(center);
         @include order(2);
         text-align: center;
         padding: 0;
-        margin: 0 0 20px 15px;
+        margin: 0 0 em(20) em(15);
     }
 
     article {
@@ -229,12 +232,12 @@ img:nth-child(1){ animation-delay:12s; }
 
     h2 {
         font-size: 3em;
-        margin-left: 15px;
+        margin-left: em(15);
         margin-bottom: 0.5em;
     }
 
     p {
-        padding: 20px;
+        padding: em(20);
         font-size: 1.3em;
         line-height: 1.5;
         text-align: justify;
@@ -246,16 +249,16 @@ img:nth-child(1){ animation-delay:12s; }
 }
 
 .why-attend {
-    margin-top: 40px;
+    margin-top: em(40);
     background: no-repeat top/100% image-url("line_separator.png");
-    padding-top: 30px;
+    padding-top: em(30);
     .title {
         @include flex(25%);
         @include order(2);
         @include align-self(center);
         max-width: 20em;
         min-width: 15em;
-        margin: 0 10px;
+        margin: 0 em(10);
         h1 {
             text-align: center;
             font-size: 3em;
@@ -263,7 +266,7 @@ img:nth-child(1){ animation-delay:12s; }
     }
 
     li {
-        margin-bottom: 35px;
+        margin-bottom: em(35);
         font-size: 1.1em;
         line-height: 1.4;
         text-align: left;
@@ -272,7 +275,7 @@ img:nth-child(1){ animation-delay:12s; }
     .left-reasons {
         @include flex(34%);
         @include order(1);
-        margin: 0 10px;
+        margin: 0 em(10);
         max-width: 30em;
         min-width: 15em;
     }
@@ -280,7 +283,7 @@ img:nth-child(1){ animation-delay:12s; }
     .right-reasons {
         @include flex(34%);
         @include order(3);
-        margin: 0 10px;
+        margin: 0 em(10);
         max-width: 30em;
         min-width: 15em;
     }
@@ -301,7 +304,7 @@ img:nth-child(1){ animation-delay:12s; }
         line-height: 1.5;
     }
     li  {
-        margin: 10px 20px;
+        margin: em(10) em(15);
         vertical-align: middle;
         display: inline-block;
         font-size: 1.5em;
@@ -311,8 +314,8 @@ img:nth-child(1){ animation-delay:12s; }
 .map {
     display: inline-block;
     text-align: center;
-    max-width: 600px;
-    min-width: 450px;
+    max-width: em(600);
+    min-width: em(450);
 }
 
 .hotel-info {
@@ -324,20 +327,20 @@ img:nth-child(1){ animation-delay:12s; }
 .details {
     text-align: right;
     font-weight: bold;
-    margin: 10px 30px 0 0;
+    margin: em(10) em(30) 0 0;
 }
 
 .aditional-contacts {
     @include align-self(center);
-    margin: 0 0 0 30px;
+    margin: 0 0 0 em(30);
     li {
-        margin-bottom: 20px;
+        margin-bottom: em(20);
         text-align: right;
     }
 }
 
 .device-logo {
-    margin: 0 10px;
+    margin: 0 em(10);
 }
 
 .sponsors, .organizers {
@@ -345,12 +348,12 @@ img:nth-child(1){ animation-delay:12s; }
     background-color: $white;
     li {
         display: inline-block;
-        margin: 5px 20px;
+        margin: em(5) em(20);
         @include align-self(center);
     }
     &.container {
         @include justify-content(space-around);
-        padding: 0 5px;
+        padding: 0 em(5);
     }
 }
 
@@ -361,23 +364,23 @@ img:nth-child(1){ animation-delay:12s; }
 .flash-note {
     text-align: center;
     font-size: 1em;
-    padding: 15px;
+    padding: em(15);
 }
 
 .form-gateway {
+    min-width: em(345);
     h1 {
         font-size: 2em;
     }
     @include flex(50%);
     text-align: center;
-    max-width: 50%;
     button {
         display: block;
-        border: 3px solid $white;
-        margin: 20px auto;
+        border: em(3) solid $white;
+        margin: em(20) auto;
         font-size: 1.8em;
-        padding: 50px;
-        width: 70%;
+        padding: em(20) em(50);
+        width: auto;
         background-color: $active-translucid;
         &:hover, &:focus {
             background-color: lighten($active-translucid, 15%);
@@ -386,26 +389,32 @@ img:nth-child(1){ animation-delay:12s; }
 }
 
 .right-separator {
-    border-right: 2px solid $white;
+    border-right: em(2) solid $white;
+    @include media(max-width em(860)) {
+        border-right: 0px;
+    }
 }
 
 .form {
+    margin-top: em(50);
     & > aside {
         @include flex(30%);
         @include align-self(center);
+        min-width: em(250);
         text-align: center;
+        z-index: -2;
     }
     & > article {
         @include flex(70%);
         background-color: $form-background;
-        padding: 20px;
+        padding: em(20);
         position: relative;
         .limited-ribbon  {
             position: absolute;
             background: $active-bubble;
             top: -46px;
             right: -20px;
-            padding: 10px 20px;
+            padding: em(15) em(20);
             text-align: left;
             font-weight: 900;
             text-transform: uppercase;
@@ -413,7 +422,7 @@ img:nth-child(1){ animation-delay:12s; }
         }
         .limited-ribbon:before{
             content: "";
-            border: 12px solid;
+            border: em(12) solid;
             border-color: $highlight transparent transparent $highlight;
             position: absolute;
             top: 46px;
@@ -424,19 +433,27 @@ img:nth-child(1){ animation-delay:12s; }
         display: block;
     }
     select {
-        margin-right: 5px;
+        margin-right: em(5);
     }
     .title {
-        margin-bottom: 80px;
+        margin-bottom: em(80);
+    }
+
+    .address-fields {
+        margin-top: 0.75em;
     }
 
     .submit-payment {
         padding: 0.8em 1em;
         background-image: linear-gradient(180deg, $active-bubble 25%, darken($active-bubble, 14%));
-        margin: 10px 0;
-        border-radius: 15px;
-        width: 300px;
-        height: 70px;
+        margin: em(10) 0;
+        border-radius: em(15);
+        max-width: em(300);
+        min-height: em(70);
+    }
+
+    .field-group {
+        min-width: em(360);
     }
 
     .inlined {
@@ -445,19 +462,24 @@ img:nth-child(1){ animation-delay:12s; }
 
     .half-right {
         display: inline-block;
-        width: 49%;
-        margin-right: 2px;
+        max-width: 49%;
+        min-width: em(160);
+        margin-right: em(2);
     }
 
     .half-left {
         display: inline-block;
-        width: 49%;
+        min-width: em(160);
+        max-width: 49%;
     }
 
     .datefield {
         width: 28%;
     }
+}
 
+.center-text {
+    text-align: center;
 }
 
 .tracks, .speakers {
@@ -467,45 +489,145 @@ img:nth-child(1){ animation-delay:12s; }
     }
 
     h2 {
-        font-size: 3em;
-        padding: 30px;
-        width: 350px;
-        border-radius: 25px;
+        font-size: 2em;
+        padding: em(10) em(15);
+        border-radius: em(10);
+        &:hover {
+            color: darken($white, 25%);
+        }
+    }
+
+    .track-links li {
+        display: inline-block;
+    }
+
+    .track-content {
+        margin: 1em auto 4em;
+        width: 80%;
     }
 }
 
 .speakers {
-    .container {
-        @include align-items(center);
+    .accordion-tabs {
+        @include clearfix;
+        line-height: 1.5;
+        margin-bottom: $base-spacing;
+        padding: 0;
+
+        @include media(max-width $tab-mode) {
+            border-radius: $tab-border-radius;
+            border: $tab-border;
+        }
+
+        .tab-header-and-content {
+            list-style: none;
+
+            @include media($tab-mode) {
+                display: inline;
+            }
+
+            &:first-child .tab-link {
+                border-top-left-radius: $tab-border-radius;
+                border-top-right-radius: $tab-border-radius;
+
+                @include media(max-width $tab-mode) {
+                    border-top: 0;
+                }
+            }
+
+            &:last-child .tab-link {
+                @include media(max-width $tab-mode) {
+                    border-bottom-left-radius: $tab-border-radius;
+                    border-bottom-right-radius: $tab-border-radius;
+                }
+            }
+        }
+
+        .tab-link {
+            background-color: $tab-inactive-color;
+            border-top: $tab-border;
+            color: $white;
+            display: block;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1em 2em 0.5em;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            @include media($tab-mode) {
+                @include inline-block;
+                border-top-left-radius: $tab-border-radius;
+                border-top-right-radius: $tab-border-radius;
+                border-top: 0;
+            }
+
+            &:hover {
+                color: $action-color;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &.is-active {
+                background-color: $tab-active-background;
+
+                @include media($tab-mode) {
+                    background-color: $tab-active-background;
+                    // border: $tab-border;
+                    border-bottom-color: $tab-active-background;
+                    margin-bottom: -em(1);
+                }
+            }
+        }
+
+        .tab-content {
+            background: $tab-active-background;
+            display: none;
+            padding: $base-spacing $gutter;
+            width: 100%;
+            color: black;
+
+            @include media($tab-mode) {
+                border-bottom-left-radius: $base-border-radius;
+                border-bottom-right-radius: $base-border-radius;
+                border-top-right-radius: $base-border-radius;
+                float: left;
+            }
+        }
     }
-    .speaker {
-        width: 370px;
-        height: 150px;
-        border-radius: 35px;
-        text-align: center;
-        padding: 20px 10px;
-        margin-bottom: 20px;
-        h3 {
-            font-size: 1.6em;
-            margin: 0;
-        }
-        h4 {
-            font-size: 1.2em;
-            font-weight: 400;
-            margin-bottom: 10px;
-        }
-        h5 {
-            font-size: 1em;
-            font-weight: 400;
-        }
+}
+
+.container {
+    @include align-items(center);
+}
+.speaker {
+    width: em(370);
+    height: em(150);
+    border-radius: em(35);
+    text-align: center;
+    padding: em(20) em(10);
+    margin-bottom: em(20);
+    h3 {
+        font-size: 1.6em;
+        margin: 0;
+    }
+    h4 {
+        font-size: 1.2em;
+        font-weight: 400;
+        margin-bottom: em(10);
+    }
+    h5 {
+        font-size: 1em;
+        font-weight: 400;
     }
 }
 
 .recommended {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: em(60);
     nav {
-        margin-bottom: 20px;
+        margin-bottom: em(20);
         ul{
             @include display(flex);
             @include justify-content(space-around);
@@ -528,7 +650,7 @@ img:nth-child(1){ animation-delay:12s; }
 
 .hotel, .plan {
     width: 90%;
-    padding: 10px;
+    padding: em(10);
     margin: 0 auto 4em;
     background-color: $form-background;
     @include display(flex);
@@ -539,8 +661,8 @@ img:nth-child(1){ animation-delay:12s; }
         @include flex(35%);
         text-align: center;
         margin: 0;
-        margin-top: 5px;
-        margin-right: 10px;
+        margin-top: em(5);
+        margin-right: em(10);
     }
 
     section {
@@ -562,7 +684,7 @@ img:nth-child(1){ animation-delay:12s; }
     padding: 0;
     & > section {
         @include flex(50%);
-        padding: 20px;
+        padding: em(20);
     }
     & > .grid-1of4 {
         @include flex(23%);
