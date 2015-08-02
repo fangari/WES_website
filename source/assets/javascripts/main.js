@@ -36,11 +36,14 @@ $(document).ready(function () {
 
   // Expander section
   ["quality", "promotion", "traceability", "wellbeing"].forEach(function(track) {
-      var trigger = document.getElementById("js-" + track + "-trigger");
-      var content = document.getElementById("js-" + track + "-content");
-          $(trigger).click(function(){
-              $(content).toggleClass("expander-hidden");
-          });
+    var $trigger = $(document.getElementById("js-" + track + "-trigger"));
+    var content = document.getElementById("js-" + track + "-content");
+    $trigger.on("mouseenter", function(){
+      $(content).slideDown();
+    });
+    $trigger.on("mouseleave", function(){
+      $(content).slideUp();
+    });
   });
 
 });
