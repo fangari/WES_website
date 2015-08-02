@@ -38,10 +38,10 @@ $(document).ready(function () {
   ["quality", "promotion", "traceability", "wellbeing"].forEach(function(track) {
     var $trigger = $(document.getElementById("js-" + track + "-trigger"));
     var content = document.getElementById("js-" + track + "-content");
-    $trigger.on("mouseenter", function(){
+    $trigger.on("mouseenter touchenter", function(){
       $(content).slideDown();
     });
-    $trigger.on("mouseleave", function(){
+    $trigger.on("mouseleave touchleave", function(){
       $(content).slideUp();
     });
   });
