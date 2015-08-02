@@ -1,0 +1,25 @@
+$expander-toggle-size: 1em;
+$expander-toggle-margin: 1em;
+
+.expander-trigger {
+    @include user-select(none);
+    cursor: pointer;
+    display: block;
+    font-size: $expander-toggle-size;
+    margin-bottom: $expander-toggle-size;
+    padding-bottom: $expander-toggle-size / 4;
+    text-decoration: none;
+}
+
+.expander-content {
+    color: $dark-gray;
+    background-color: $white;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    padding: em(40);
+    border-radius: 15px;
+    margin-bottom: 1em;
+}
+.expander-hidden {
+    display: none;
+}

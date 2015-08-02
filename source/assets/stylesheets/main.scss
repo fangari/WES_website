@@ -504,6 +504,14 @@ img:nth-child(1){ animation-delay:12s; }
     .track-content {
         margin: 1em auto 4em;
         width: 80%;
+        ul {
+            list-style-type: disc;
+            padding-left: em(25);
+            text-indent: em(5);
+        }
+        li {
+            text-align: justify;
+        }
     }
 }
 

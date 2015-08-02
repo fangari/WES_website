@@ -23,3 +23,79 @@ td,
 th {
   vertical-align: middle;
 }
+.tables {
+  border-collapse: separate;
+  border-left: 0px;
+  border-radius: $base-border-radius;
+  border-spacing: 0;
+  border: $table-border;
+  width: 100%;
+  text-align: center;
+
+  tbody {
+    background-color: $table-background;
+    background-blend-mode: multiply;
+
+    tr:hover > td, tr:hover > th {
+      background-color: $table-hover-background;
+    }
+    tr:nth-child(even) {
+      background-color: $table-stripe-background;
+      &:hover > td {
+        background-color: $table-stripe-background-hover;
+      }
+    }
+  }
+
+  thead:first-of-type {
+    tr:first-child > th:first-child {
+      border-top-left-radius: $base-border-radius;
+    }
+
+    tr:first-child > th:last-child {
+      border-top-right-radius: $base-border-radius;
+    }
+  }
+
+  tbody:last-child {
+    tr:last-child > td:first-child {
+      border-bottom-left-radius: $base-border-radius;
+    }
+
+    tr:last-child > td:last-child {
+      border-bottom-right-radius: $base-border-radius;
+    }
+  }
+
+  thead {
+    th {
+      background-color: $table-header-background;
+      border-bottom: 0px;
+      border-left: 2px solid $table-border-color;
+      padding: $table-padding;
+      text-align: center;
+      font-size: 1.4em;
+
+      &:first-child {
+        border-left: none;
+      }
+    }
+  }
+
+  tbody {
+    background-color: $table-background;
+
+    td {
+      border-bottom: 0px;
+      border-left: 2px solid $table-border-color;
+      border-top: 1px solid $table-border-color;
+      padding: $table-padding;
+      font-size: 1.3em;
+
+      &:first-child {
+        border-left: none;
+      }
+
+    }
+  }
+}

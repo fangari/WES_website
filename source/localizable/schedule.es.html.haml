@@ -5,42 +5,177 @@ layout: layout
 %main
   %section.tracks
     %h1= t(:tracks)
-    .container
-      %h2.speech-bubble.right-bottom.left-triangle Calidad
-      %h2.active.speech-bubble.left-bottom.right-triangle Promoción
-    .container
-      %h2.active.speech-bubble.left-bottom.left-triangle Trazabilidad
-      %h2.speech-bubble.right-bottom.right-triangle Bienestar
+    %ul.track-links.container
+      %li
+        = link_to "javascript:void(0)", id: "js-quality-trigger", class: "expander-trigger" do
+          %h2.speech-bubble.right-bottom.left-triangle Calidad
+      %li
+        = link_to "javascript:void(0)", id: "js-promotion-trigger", class: "expander-trigger" do
+          %h2.active.speech-bubble.left-bottom.right-triangle Promoci&oacute;n
+      %li
+        = link_to "javascript:void(0)", id: "js-traceability-trigger", class: "expander-trigger" do
+          %h2.active.speech-bubble.left-bottom.left-triangle Trazabilidad
+      %li
+        = link_to "javascript:void(0)", id: "js-wellbeing-trigger", class: "expander-trigger" do
+          %h2.speech-bubble.right-bottom.right-triangle Bienestar
+    %ul.track-content
+      %li.expander-content.expander-hidden#js-quality-content
+        %p El consumidor espera que un producto de lujo esté amparado bajo la sombrilla de la calidad. En busca de brindarle al consumidor dicha calidad, se hace necesaria la interacción entre laboratorios gemológicos, investigadores, mineros, profesionales de la talla, y comerciantes para lograr un negocio transparente en el cual el consumidor compré entendiendo qué es lo que compra.
+        %p
+          %h4 Subtemas
+          %ul
+            %li Origen
+            %li Talla de precisi&oacute;n
+            %li Armonizaci&oacute;n de los reportes de las Esmeraldas a nivel mundial
+      %li.expander-content.expander-hidden#js-promotion-content
+        %p La esmeralda carece de programas que impulsen su consumo. El conocimiento del consumidor promedio es bajo y nuevos iconos de estatus ocupan el lugar que hasta hace unos años tenía la joyería. &iquest;Cómo difundir y motivar el consumo de las esmeraldas&quest; Otro de los factores claves de este evento.
+        %p
+          %h4 Subtemas
+          %ul
+            %li Estrat&eacute;gias de marca para incentivar las ventas
+            %li Educaci&oacute;n
+            %li Mercadeo
+            %li Tendencias y preferencias de joyas con referencia a las esmeraldas.
+      %li.expander-content.expander-hidden#js-traceability-content
+        %p No basta con entregar un producto de calidad, con educar y promover su consumo, con beneficiar a las comunidades y al medio ambiente, y con no financiar el crimen, sino que también es necesario encontrar una manera de garantizar que el producto que el consumidor est&aacute; adquiriendo tiene esos componentes. Buscar caminos para el logro de esta meta es uno de los objetivos de esta temática.
+        %p
+          %h4 Subtemas
+          %ul
+            %li Historia de los procesos aplicados al producto.
+            %li Distribuci&oacute;n y localizaci&oacute;n despu&eacute;s de su entrega.
+      %li.expander-content.expander-hidden#js-wellbeing-content
+        %p Los consumidores actuales se preocupan cada vez más por que los productos que consumen cumplan con un abanico de requisitos, que van desde el beneficio y crecimiento de las comunidades afectadas por la actividad empresarial, el cuidado y mantenimiento del medio ambiente, hasta la exclusión total del financiamiento de actividades ilegales. &iquest;De qué manera potenciar la interacción entre negocios, comunidad, y Medio ambiente&quest; Responder esta pregunta es uno de los objetivos de las discusiones en este eje temático.
+        %p
+          %h4 Subtemas
+          %ul
+            %li Responsabilidad social empresarial
+            %li Medio Ambiente
+            %li C&oacute;mo potenciar los esfuerzos de los habitantes de la regi&oacute;n, capacitando a sus comunidades en valores agregados.
+
   %section.speakers
     %h1= t(:speakers)
-    .container
-      .speaker.speech-bubble.right-bottom.left-triangle
-        %h3 Natalia Guti&eacute;rrez J.
-        %h4 Directora de la Agencia Nacional de Minería
-        %h5= t(:keynote_slot)
-      .speaker.active.speech-bubble.left-bottom.right-triangle
-        %h3 Tomas Gonz&aacute;lez E.
-        %h4 Ministro de Minas y Energ&iacute;a
-        %h5= t(:keynote_slot)
-    .container
-      .speaker.speech-bubble.right-bottom.left-triangle
-        %h3 Mar&iacute;a Isabel Ulloa
-        %h4 Vice Ministra de Minas
-        %h5= t(:keynote_slot)
-      .speaker.active.speech-bubble.left-bottom.right-triangle
-        %h3 Manuel Rodr&iacute;guez
-        %h4 Direcci&oacute;n de Reforma Minera
-        %h5= t(:keynote_slot)
-      .speaker.speech-bubble.right-bottom.left-triangle
-        %h3 Luis Gabriel Angarita
-        %h4 Presidente Acodes
-        %h5= t(:keynote_slot)
-    .container
-      .speaker.active.speech-bubble.left-bottom.left-triangle
-        %h3 Oscar Baquero
-        %h4 Presidente de Fedesmeraldas
-        %h5= t(:keynote_slot)
-      .speaker.speech-bubble.right-bottom.right-triangle
-        %h3 Carlos Julio Cede&ntilde;o
-        %h4 Director del Centro de Desarrollo Tecnol&oacute;gico de la Esmeralda Colombiana
-        %h5= t(:keynote_slot)
+    %ul.accordion-tabs
+      %li.tab-header-and-content
+        = link_to "Octubre 13", "javascript:void(0)", class: "is-active tab-link"
+        .tab-content
+          %table.tables
+            %thead
+              %tr
+                %th Hora
+                %th Tem&aacute;tica
+                %th Conferencista
+            %tbody
+              %tr
+                %td 8:00 a.m. -  9:00 a.m.
+                %td Miner&iacute;a en Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 9:00 a.m. -  10:00 a.m.
+                %td Miner&iacute;a en Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 10:00 a.m. -  11:00 a.m.
+                %td Miner&iacute;a en Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 11:00 a.m. -  12:00 a.m.
+                %td Miner&iacute;a en Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 12:00 a.m. -  1:00 p.m.
+                %td{colspan: 2} Almuerzo
+              %tr
+                %td 1:00 p.m. -  2:00 p.m.
+                %td Miner&iacute;a en Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 3:00 p.m. -  4:00 p.m.
+                %td Miner&iacute;a en Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 4:00 p.m. -  5:00 p.m.
+                %td Miner&iacute;a en Colombia
+                %td Gabriel Angarita
+      %li.tab-header-and-content
+        = link_to "Octubre 14", "javascript:void(0)", class: "tab-link"
+        .tab-content
+          %table.tables
+            %thead
+              %tr
+                %th Hora
+                %th Tem&aacute;tica
+                %th Conferencista
+            %tbody
+              %tr
+                %td 8:00 a.m. -  9:00 a.m.
+                %td Calidad
+                %td Gabriel Angarita
+              %tr
+                %td 9:00 a.m. -  10:00 a.m.
+                %td Calidad
+                %td Gabriel Angarita
+              %tr
+                %td 10:00 a.m. -  11:00 a.m.
+                %td Calidad
+                %td Gabriel Angarita
+              %tr
+                %td 11:00 a.m. -  12:00 a.m.
+                %td Calidad
+                %td Gabriel Angarita
+              %tr
+                %td 12:00 a.m. -  1:00 p.m.
+                %td{colspan: 2} Almuerzo
+              %tr
+                %td 1:00 p.m. -  2:00 p.m.
+                %td Calidad
+                %td Gabriel Angarita
+              %tr
+                %td 3:00 p.m. -  4:00 p.m.
+                %td Calidad
+                %td Gabriel Angarita
+              %tr
+                %td 4:00 p.m. -  5:00 p.m.
+                %td Calidad
+                %td Gabriel Angarita
+      %li.tab-header-and-content
+        = link_to "Octubre 15", "javascript:void(0)", class: "tab-link"
+        .tab-content
+          %table.tables
+            %thead
+              %tr
+                %th Hora
+                %th Tem&aacute;tica
+                %th Conferencista
+            %tbody
+              %tr
+                %td 8:00 a.m. -  9:00 a.m.
+                %td Promoci&oacute;n
+                %td Gabriel Angarita
+              %tr
+                %td 9:00 a.m. -  10:00 a.m.
+                %td Promoci&oacute;n
+                %td Gabriel Angarita
+              %tr
+                %td 10:00 a.m. -  11:00 a.m.
+                %td Promoci&oacute;n
+                %td Gabriel Angarita
+              %tr
+                %td 11:00 a.m. -  12:00 a.m.
+                %td Promoci&oacute;n
+                %td Gabriel Angarita
+              %tr
+                %td 12:00 a.m. -  1:00 p.m.
+                %td{colspan: 2} Almuerzo
+              %tr
+                %td 1:00 p.m. -  2:00 p.m.
+                %td Promoci&oacute;n
+                %td Gabriel Angarita
+              %tr
+                %td 3:00 p.m. -  4:00 p.m.
+                %td Promoci&oacute;n
+                %td Gabriel Angarita
+              %tr
+                %td 4:00 p.m. -  5:00 p.m.
+                %td Promoci&oacute;n
+                %td Gabriel Angarita
+

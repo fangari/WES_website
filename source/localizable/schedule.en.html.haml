@@ -5,42 +5,163 @@ layout: layout
 %main
   %section.tracks
     %h1= t(:tracks)
-    .container
-      %h2.speech-bubble.right-bottom.left-triangle Quality
-      %h2.active.speech-bubble.left-bottom.right-triangle Promotion
-    .container
-      %h2.active.speech-bubble.left-bottom.left-triangle Traceability
-      %h2.speech-bubble.right-bottom.right-triangle Well-being
+    %ul.track-links.container
+      %li
+        = link_to "javascript:void(0)", id: "js-quality-trigger", class: "expander-trigger" do
+          %h2.speech-bubble.right-bottom.left-triangle Quality
+      %li
+        = link_to "javascript:void(0)", id: "js-promotion-trigger", class: "expander-trigger" do
+          %h2.active.speech-bubble.left-bottom.right-triangle Promotion
+      %li
+        = link_to "javascript:void(0)", id: "js-traceability-trigger", class: "expander-trigger" do
+          %h2.active.speech-bubble.left-bottom.left-triangle Traceability
+      %li
+        = link_to "javascript:void(0)", id: "js-wellbeing-trigger", class: "expander-trigger" do
+          %h2.speech-bubble.right-bottom.right-triangle Well-being
+    %ul.track-content
+      %li.expander-content.expander-hidden#js-quality-content
+        %p Today&rsquo;s consumer expects quality in a luxury product.          |
+          Being able to provide consumers with the kind of quality they expect, |
+          requires the interaction and collaboration of gemological             |
+          laboratories, researchers, miners, cutters, and gem dealers.          |
+          This collaboration will achieve transparency in the business,         |
+          and an educated consumer that understands what he or she is buying.   |
+        %p
+          %h4 Topics
+          %ul
+            %li Origin
+            %li Precision cutting techniques
+            %li Harmonization of Emerald reports
+      %li.expander-content.expander-hidden#js-promotion-content
+        %p La esmeralda carece de programas que impulsen su consumo. El conocimiento por parte del consumidor en general es bajo y nuevos iconos de estatus ocupan el lugar que hasta hace unos años tenía la joyería. Cómo difundir y motivar el consumo de las esmeraldas es otro de los factores claves de este evento.
+      %li.expander-content.expander-hidden#js-traceability-content
+        %p No solo basta con entregar un producto de calidad, de educar y promover su consumo, de beneficiar a las comunidades, al medio ambiente, y no financiar el crimen sino también de encontrar una manera de garantizar que el producto que se está adquiriendo tiene esos componentes. Buscar caminos para el logro de este objetivo sin que esto cree monopolios es uno de los objetivos de esta temática.
+      %li.expander-content.expander-hidden#js-wellbeing-content
+        %p Los consumidores actuales se preocupan cada vez más de que los productos que consumen cumplan con un abanico de requisitos  que van desde el beneficio y crecimiento de las comunidades afectadas por la actividad empresarial, el cuidado y mantenimiento del medio ambiente, la exclusión total al financiamiento de actividades ilegales. De qué manera potenciar la interacción negocios, comunidad, Medio ambiente es uno de los objetivos de las discusiones en este eje temático.
+
   %section.speakers
     %h1= t(:speakers)
-    .container
-      .speaker.speech-bubble.right-bottom.left-triangle
-        %h3 Natalia Guti&eacute;rrez J.
-        %h4 National Mining Agency Director
-        %h5= t(:keynote_slot)
-      .speaker.active.speech-bubble.left-bottom.right-triangle
-        %h3 Tomas Gonz&aacute;lez E.
-        %h4 Minister of Mining and Energy
-        %h5= t(:keynote_slot)
-    .container
-      .speaker.speech-bubble.right-bottom.left-triangle
-        %h3 Mar&iacute;a Isabel Ulloa
-        %h4 Vice Minister of Mines
-        %h5= t(:keynote_slot)
-      .speaker.active.speech-bubble.left-bottom.right-triangle
-        %h3 Manuel Rodr&iacute;guez
-        %h4 Mining Reform Directorate
-        %h5= t(:keynote_slot)
-      .speaker.speech-bubble.right-bottom.left-triangle
-        %h3 Luis Gabriel Angarita
-        %h4 Acodes President
-        %h5= t(:keynote_slot)
-    .container
-      .speaker.active.speech-bubble.left-bottom.left-triangle
-        %h3 Oscar Baquero
-        %h4 Fedesmeraldas President
-        %h5= t(:keynote_slot)
-      .speaker.speech-bubble.right-bottom.right-triangle
-        %h3 Carlos Julio Cede&ntilde;o
-        %h4 Technology Development Center for Colombian Emeralds Director
-        %h5= t(:keynote_slot)
+    %ul.accordion-tabs
+      %li.tab-header-and-content
+        = link_to "October 13", "javascript:void(0)", class: "is-active tab-link"
+        .tab-content
+          %table.tables
+            %thead
+              %tr
+                %th Time
+                %th Track
+                %th Speaker
+            %tbody
+              %tr
+                %td 8:00 a.m. -  9:00 a.m.
+                %td Mining in Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 9:00 a.m. -  10:00 a.m.
+                %td Mining in Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 10:00 a.m. -  11:00 a.m.
+                %td Mining in Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 11:00 a.m. -  12:00 a.m.
+                %td Mining in Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 12:00 a.m. -  1:00 p.m.
+                %td{colspan: 2} Lunch
+              %tr
+                %td 1:00 p.m. -  2:00 p.m.
+                %td Mining in Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 3:00 p.m. -  4:00 p.m.
+                %td Mining in Colombia
+                %td Gabriel Angarita
+              %tr
+                %td 4:00 p.m. -  5:00 p.m.
+                %td Mining in Colombia
+                %td Gabriel Angarita
+      %li.tab-header-and-content
+        = link_to "October 14", "javascript:void(0)", class: "tab-link"
+        .tab-content
+          %table.tables
+            %thead
+              %tr
+                %th Time
+                %th Track
+                %th Speaker
+            %tbody
+              %tr
+                %td 8:00 a.m. -  9:00 a.m.
+                %td Quality
+                %td Gabriel Angarita
+              %tr
+                %td 9:00 a.m. -  10:00 a.m.
+                %td Quality
+                %td Gabriel Angarita
+              %tr
+                %td 10:00 a.m. -  11:00 a.m.
+                %td Quality
+                %td Gabriel Angarita
+              %tr
+                %td 11:00 a.m. -  12:00 a.m.
+                %td Quality
+                %td Gabriel Angarita
+              %tr
+                %td 12:00 a.m. -  1:00 p.m.
+                %td{colspan: 2} Lunch
+              %tr
+                %td 1:00 p.m. -  2:00 p.m.
+                %td Quality
+                %td Gabriel Angarita
+              %tr
+                %td 3:00 p.m. -  4:00 p.m.
+                %td Quality
+                %td Gabriel Angarita
+              %tr
+                %td 4:00 p.m. -  5:00 p.m.
+                %td Quality
+                %td Gabriel Angarita
+      %li.tab-header-and-content
+        = link_to "October 15", "javascript:void(0)", class: "tab-link"
+        .tab-content
+          %table.tables
+            %thead
+              %tr
+                %th Time
+                %th Track
+                %th Speaker
+            %tbody
+              %tr
+                %td 8:00 a.m. -  9:00 a.m.
+                %td Promotion
+                %td Gabriel Angarita
+              %tr
+                %td 9:00 a.m. -  10:00 a.m.
+                %td Promotion
+                %td Gabriel Angarita
+              %tr
+                %td 10:00 a.m. -  11:00 a.m.
+                %td Promotion
+                %td Gabriel Angarita
+              %tr
+                %td 11:00 a.m. -  12:00 a.m.
+                %td Promotion
+                %td Gabriel Angarita
+              %tr
+                %td 12:00 a.m. -  1:00 p.m.
+                %td{colspan: 2} Lunch
+              %tr
+                %td 1:00 p.m. -  2:00 p.m.
+                %td Promotion
+                %td Gabriel Angarita
+              %tr
+                %td 3:00 p.m. -  4:00 p.m.
+                %td Promotion
+                %td Gabriel Angarita
+              %tr
+                %td 4:00 p.m. -  5:00 p.m.
+                %td Promotion
+                %td Gabriel Angarita
