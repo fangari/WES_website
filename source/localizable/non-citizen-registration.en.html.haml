@@ -8,7 +8,7 @@ layout: layout
     = image_tag "titulo_formulario.png", class: "title"
     = image_tag "pinza_esmeralda.png"
   %article
-    .indicates-required
+    .indicates-required{style: "color:darkorange"}
       %span.asterisk*
       indicates a required field
     %form.grid{method: "post",
@@ -722,6 +722,10 @@ layout: layout
         .center-text
           %button.submit-payment{name: "subscribe", type: "submit"}Submit registration
       %footer
+        .event-cost
+          Attendance fee to the symposium is
+          %strong USD$150.
+          Once registered you will receive instructions to pay for your ticket.
         %h1 Registration payment includes
         %p
           A unique knowledge building experience &bull; |

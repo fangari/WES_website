@@ -397,6 +397,10 @@ img:nth-child(1){ animation-delay:20s; }
     }
 }
 
+.indicates-required {
+    color: darkorange;
+}
+
 .form {
     margin-top: em(50);
     & > aside {
@@ -478,6 +482,13 @@ img:nth-child(1){ animation-delay:20s; }
     .datefield {
         width: 28%;
     }
+}
+
+.event-cost {
+    font-size: 1.5em;
+    line-height: $base-line-height;
+    padding: 0 2em;
+    margin-bottom: 2em;
 }
 
 .center-text {
