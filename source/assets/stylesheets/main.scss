@@ -192,26 +192,27 @@ nav li a {
 .hero-slider {
     margin: 0 auto em(50) auto;
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     overflow: hidden;
     position: relative;
 }
 
 .photo {
     position: absolute;
-    animation: round 16s infinite;
+    animation: round 25s infinite;
     opacity: 0;
 }
 
 @include keyframes(round){
-    25%{ opacity:1; }
+    20%{ opacity:1; }
     40%{ opacity:0; }
 }
 
-img:nth-child(4){ animation-delay:0s; }
-img:nth-child(3){ animation-delay:4s; }
-img:nth-child(2){ animation-delay:8s; }
-img:nth-child(1){ animation-delay:12s; }
+img:nth-child(5){ animation-delay:0s;}
+img:nth-child(4){ animation-delay:5s; }
+img:nth-child(3){ animation-delay:10s; }
+img:nth-child(2){ animation-delay:15s; }
+img:nth-child(1){ animation-delay:20s; }
 
 .mission-statement {
     @include flex-wrap(wrap-reverse);
@@ -564,7 +565,7 @@ img:nth-child(1){ animation-delay:12s; }
             text-decoration: none;
 
             @include media($tab-mode) {
-                @include inline-block;
+                display: inline-block;
                 border-top-left-radius: $tab-border-radius;
                 border-top-right-radius: $tab-border-radius;
                 border-top: 0;
