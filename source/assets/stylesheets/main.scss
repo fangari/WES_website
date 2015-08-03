@@ -136,6 +136,7 @@ nav {
     @include align-self(center);
     @include justify-content(space-around);
     text-align: center;
+    min-width: em(320);
 }
 
 nav li {
@@ -502,7 +503,7 @@ img:nth-child(1){ animation-delay:12s; }
     }
 
     .track-content {
-        margin: 1em auto 4em;
+        margin: 0.6em auto 3em;
         width: 80%;
         ul {
             list-style-type: disc;

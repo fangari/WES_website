@@ -16,9 +16,13 @@ $expander-toggle-margin: 1em;
     background-color: $white;
     font-size: 1.4em;
     line-height: 1.5em;
-    padding: em(40);
+    padding: em(25);
     border-radius: 15px;
     margin-bottom: 1em;
+    @include media(max-width $small-screen){
+        padding: em(10);
+        font-size: 1em;
+     }
 }
 .expander-hidden {
     display: none;
