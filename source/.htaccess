@@ -85,7 +85,7 @@
 # Customize what Apache returns to the client in case of an error.
 # https://httpd.apache.org/docs/current/mod/core.html#errordocument
 
-# ErrorDocument 404 /404.html
+ErrorDocument 404 /404/index.html
 
 # ----------------------------------------------------------------------
 # | Error prevention                                                   |
@@ -352,7 +352,7 @@ AddDefaultCharset utf-8
 # <IfModule mod_rewrite.c>
 #    RewriteEngine On
 #    RewriteCond %{HTTPS} !=on
-#    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+#    RewriteRule ^(.*)$ https://%{HTTP_HOST}/en/$1 [R=301,L]
 # </IfModule>
 
 # ----------------------------------------------------------------------
@@ -376,12 +376,16 @@ AddDefaultCharset utf-8
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Option 1: rewrite www.example.com → example.com
+<IFModule mod_rewirte.c>
+  RewriteEngine on
+  RewriteRule ^/$ /en/ [R=301]
+</IFModule>
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTPS} !=on
     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
+    RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI}/ [R=301,L]
 </IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

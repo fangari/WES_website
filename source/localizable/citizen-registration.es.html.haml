@@ -5,49 +5,50 @@ layout: layout
 %main.form.container
   %aside
     %h1{hidden: true} Formulario de inscripción para ciudadanos de otro pa&iacute;s
-    = image_tag "titulo_formulario.png", class: "title"
+    = image_tag "titulo_citizen_es.png", class: "title"
     = image_tag "pinza_esmeralda.png"
   %article
     .indicates-required
       %span.asterisk*
       indica un campo requerido
-    %form.grid{method: "post"}
-      %section.right-separator
+    %form.grid{method: "post",
+    name: "mc-embedded-subscribe-form", novalidate: true}
+      %section.field-group.right-separator
         %label{for: "nombre"}Nombre
         .grid
           %select.grid-1of4{name: "titulo"}
-            %option Sr.
-            %option Sra.
-          %input.grid-3of4{type: "text", name: "nombre", placeholder: "Nombre"}
-        %input{type: "text", name: "apellidos", placeholder: "Apellidos"}
-        %label{for: "cedula"}N&uacute;mero de c&eacute;dula
-        %input{type: "text", name: "cedula"}
-        %label{for: "empresa"}Nombre de la Empresa
-        %input{type: "text", name: "empresa", placeholder: "Empresa"}
-        %label{for: "campoDeTrabajo"}Campo de Trabajo
+            %option{value: "Sr."}Sr.
+            %option{value: "Sra."}Sra.
+          %input.grid-3of4{type: "text", name: "NOMBRE", placeholder: "Nombre *", required: true}
+        %input{type: "text", name: "APELLIDO", placeholder: "Last name *", required: true}
+        %label{for: "CEDULA"}N&uacute;mero de c&eacute;dula
+        %input{type: "text", name: "CEDULA"}
+        %label{for: "EMPRESA"}Empresa
+        %input{type: "text", name: "EMPRESA", placeholder: "Empresa"}
+        %label{for: "campoDeTrabajo"}Campo de Trabajo*
         .grid
           .grid-1of2
             %ul
               %li
-                %input{type: "checkbox", name: "campoDeTrabajo", id: "ventas"}
+                %input{id: "mce-group[19717]-19717-0", name: "group[19717][1]", type: "checkbox", value: "1"}/
                 Ventas
               %li
-                %input{type: "checkbox", name: "campoDeTrabajo", id: "exhibicion"}
-                Exhibición
-              %li
-                %input{type: "checkbox", name: "campoDeTrabajo", id: "mineria"}
+                %input{id: "mce-group[19717]-19717-1", name: "group[19717][2]", type: "checkbox", value: "2"}/
                 Miner&iacute;a
               %li
-                %input{type: "checkbox", name: "campoDeTrabajo", id: "lapidario"}
-                Lapidario
+                %input{id: "mce-group[19717]-19717-2", name: "group[19717][4]", type: "checkbox", value: "4"}/
+                Exhibici&oacute;n
+              %li
+                %input{id: "mce-group[19717]-19717-3", name: "group[19717][8]", type: "checkbox", value: "8"}/
+                Lapidaci&oacute;n
           .grid-1of2
             %ul
               %li
-                %input{type: "checkbox", name: "campoDeTrabajo", id: "otro"}
+                %input{id: "mce-group[19717]-19717-4", name: "group[19717][16]", type: "checkbox", value: "16"}/
                 Otro
               %li
-                %input{type: "text", name: "otroCampo", placeholder: "Especifique cuál"}
-        %div
+                %input{type: "text", name: "OTROCAMPO", placeholder: "Especifique cuál"}
+        .address-fields
           %label{for: "direccion1"}Direcci&oacute;n
           %input{type: "text", name: "direccion1", placeholder: "Dirección 1"}
           %input{type: "text", name: "direccion2", placeholder: "Dirección 2"}
@@ -64,7 +65,7 @@ layout: layout
         %div
           %label{for: "email"}Correo Electr&oacute;nico
           %input{type: "email", name: "email"}
-      %section
+      %section.field-group
         %label Fecha de Nacimiento *
         .grid
           %input.datefield{maxlength: "2", name: "BIRTHDAY[month]", pattern: "[0-9]*", placeholder: "MM", size: "2", type: "text", required: true}/
@@ -73,7 +74,7 @@ layout: layout
           &nbsp; &#47; &nbsp;
           %input.datefield{maxlength: "4", name: "BIRTHDAY[year]", pattern: "[0-9]*", placeholder: "AAAA", size: "4", type: "text", value: "", required: true}/
           %small ( mm / dd / aaaa )
-        %div
+        %div.address-fields
           %label{for: "comida"}Tipo de Alimentaci&oacute;n
           %select{name: "comida"}
             %option{ value: "", selected: true }Dieta..
@@ -97,8 +98,9 @@ layout: layout
             Este formulario es de
             %b PREINSCRIPCI&Oacute;N.
           %p A vuelta de correo recibir&aacute; la confirmaci&oacute;n para poder ingresar al evento
-          %h2{style: "text-align:center;"} CUPOS LIMITADOS
-        %button.submit-payment{type: "submit"}Enviar Formulario
+          %h2.center-text CUPOS LIMITADOS
+        .center-text
+          %button.submit-payment{type: "submit"}Enviar Formulario
       %footer
         %h1 El pago de la inscripci&oacute;n incluye
         %p
